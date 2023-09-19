@@ -21,3 +21,4 @@ if (película3 > película1 && película3 > película2){
     promo =película1+película2;
     console.log(promo);
 }
+ 
