@@ -12,3 +12,4 @@ if (genero.toUpperCase("FEMENINO") && edad > 54){
     }else{
     console.log("todavía no puede jubilarse");
 }
+

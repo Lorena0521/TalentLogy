@@ -1,0 +1,28 @@
+ul{
+    list-style: none;
+    padding: 0;
+}
+li::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+li.icon1::before {
+    background-color: #3498db; 
+    border-radius: 50%; 
+}
+li.icon2::before{
+    background-color: yellow;
+    border-radius: 50%;
+}
+li.icon3::before{
+    background-color: springgreen;
+    border-radius: 50%;
+}
+li.icon4::before{
+    background-color:plum;
+    border-radius: 50%;
+}
+

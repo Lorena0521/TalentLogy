@@ -1,0 +1,15 @@
+body {
+    font-size: 16px; /* Establece el tamaño de fuente base para el elemento padre */
+  }
+
+  .contenedor {
+    font-size: 1.5rem; /* Establece el tamaño de fuente del elemento padre en rem */
+  }
+
+  .elemento {
+    width: 3em; /* Ancho del elemento es el doble del tamaño de fuente del elemento padre (3em = 1.5rem * 2) */
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+  }

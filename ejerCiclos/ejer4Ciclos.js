@@ -8,4 +8,4 @@ while( i <=10){
 factorial = factorial * i;
 i++;
 }
-console.log("El factorial es: "+factorial);
+console.log("El factorial es: ",factorial);

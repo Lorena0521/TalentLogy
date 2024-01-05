@@ -1,0 +1,17 @@
+/*Cambio de Familia de Fuentes: Selecciona un elemento en tu página web y 
+cambia su familia de fuentes utilizando la propiedad font-family.
+*/
+
+P{
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*Ajuste del Tamaño del Texto: Modifica el tamaño del texto en 
+varios elementos de tu página utilizando la propiedad font-size.
+*/
+h3{
+    font-size: 30px;
+}
+h2{
+    font-size: 10px
+}

@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+p{
+    text-align: right;
+}
+
+.fuentes{
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+
+}

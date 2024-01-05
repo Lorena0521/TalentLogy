@@ -1,0 +1,73 @@
+.box1 {
+  width: 300px;
+  height: 200px;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  margin: 30px;
+  background-color: #98c9e9;
+  display: inline-flex;
+}
+.box2 {
+  width: 300px;
+  height: 200px;
+  border: solid red;
+  background-color: rgb(72, 236, 72);
+  display: inline-flex;
+  position: relative;
+  top: 5px;
+}
+.box3 {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: rgb(227, 171, 203);
+  display: inline-flex;
+  margin: 30PX;
+  justify-content: center;
+  text-align: center;
+}
+.box4 {
+  width: 300px;
+  height: 200px;
+  box-shadow: 5px 5px 10px;
+  display: inline-flex;
+  margin: 30px;
+}
+.box5 {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, #ffcc00, #ff6666); /**/
+  border-image-slice: 1;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  margin: 30px 50px;
+}
+.box6{
+ width:240px;
+ height: 150px;
+ padding: 20px;
+ background-color: #fff;
+ border: 15px solid transparent;
+ border-image-source: url('https://thumbs.dreamstime.com/b/ilustraci%C3%B3n-creativa-abstracta-con-le%C3%B3n-colorido-de-color-negro-190846410.jpg');
+ border-image-slice: 1;
+ display: inline-flex;
+ margin: 30px 50px;
+}
+.box7{
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmZ2G_AMtySV_Tgq7gnlwqyZszPnBpe6jyA&usqp=CAU');
+      border: 15px solid transparent;
+      border-image: linear-gradient(to right, #3d51cf, rgb(220, 27, 27)); /**/
+      border-image-slice: 1;
+      text-align: center;
+      box-sizing: border-box;
+      display: inline-flex;
+      margin: 30px 50px;
+    }
+

@@ -1,0 +1,34 @@
+body{
+    font-family: cursive;
+    border: solid;  border-color: rgb(170, 170, 69);
+    padding: 1;
+    margin: 50px;
+    border-radius: 30PX;
+    text-align: center;
+    
+}
+h1{
+    text-shadow: 2px 1px red;
+}
+h2{
+color: rgb(21, 0, 0);
+text-shadow: 2px 2px rgb(93, 242, 7);
+border-color: rgb(86, 234, 6); 
+  background-color: rgb(212, 233, 240);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+}
+p{
+  color:rgb(15, 15, 15);
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: rgb(215, 235, 242);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}

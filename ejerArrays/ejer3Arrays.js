@@ -2,8 +2,8 @@
 //Si hay más de uno, indicar igualmente la posición. (FindIndex).
 
               
-let idiomas =[1,2,3,4,5,6,7,8,8]
-let n= + prompt("ingrese un número del 1 al 9") 
+let idiomas =[1,2,3,4,5,6,7,8,8];
+let n= +prompt("ingrese un número del 1 al 9") 
 const  num=(numero) => numero ==n
 idiomas.findIndex(num);
 
@@ -16,7 +16,7 @@ for (let numero = 0; numero< idiomas.length;numero++){
  
 };
 
-console.log(`La posición del numero ${n} es: ${posiciones.join(', ')}`);
+console.log(`La posición del numero ${n} es: ${posiciones.join(',')}`);
 
 
 //FindIndex ==> Devuelve el índice del primer elemento que cumple con la condición especificada, o -1 si ningún elemento cumple con la condición.

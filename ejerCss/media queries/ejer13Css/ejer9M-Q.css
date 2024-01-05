@@ -1,0 +1,9 @@
+button{
+    color: rgb(242, 79, 79);
+}
+
+@media screen and (min-width:1200px){
+    button{
+        color: rgb(81, 227, 40);
+    }
+}

@@ -1,0 +1,6 @@
+h2, img{
+    display: inline-block;
+    position:relative;
+    width: 50%;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+/*Creación de un Bloque de Cita con Estilo: Crea un
+ bloque de cita (<blockquote>) y estilízalo con una 
+ fuente y un tamaño de texto distintos al resto del contenido.
+*/
+
+p{
+font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+}
+
+blockquote{
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+}

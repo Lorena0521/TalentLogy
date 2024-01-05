@@ -8,19 +8,19 @@ let mayor = numero [0];
 
 for(let i=0; i<numero.length; i++){
 if (mayor < array[i]){
-    mayor = array[i]
+    mayor = array[i];
 }
 if(menor > array[i]){
-    menor = array[i]
+    menor = array[i];
 }
 }
-console.log("el numero mayor es:",mayor, "el numero menor es:",menor)
+console.log("el numero mayor es:",mayor, "el numero menor es:",menor);
 }
 
 MaxMin(numero);
  
 
-let suma = numero.reduce((numero, index) => index +=numero,0); 
+let suma = numero.reduce((numero, index) => index +=numero,0); // my array.reduce: reduce sobre cada elemento del array y devuelve un único valor
 
 let media= suma/numero.length;
 

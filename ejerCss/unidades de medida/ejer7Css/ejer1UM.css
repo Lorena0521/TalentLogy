@@ -1,0 +1,64 @@
+body {
+    font-size: 16px; 
+  }
+/*Crea un elemento con un ancho de 100px.
+*/
+.mi-elemento {
+    width: 100px; 
+    border: 1px solid black; 
+    padding: 10px; 
+    background-color: azure;
+    margin: 3px;
+  }
+  /*Crea un elemento con un ancho del 50% de la ventana del navegador.
+*/
+
+  .elemento {
+    width: 50%; 
+    text-align: center;
+    border: 1px solid black; 
+    padding: 10px; 
+    background-color: azure;
+    margin: 3px;
+  }
+  /*Crea un elemento con un ancho del doble del tamaño de la fuente del elemento padre.
+*/
+  .padre {
+    font-size: 3em;
+  }
+  
+  .hijo {
+    width: 5em; 
+    border: 1px solid black; 
+    padding: 10px; 
+  }
+/*Crea un elemento con un ancho que se ajuste al ancho de su contenedor.
+*/
+.contenedor {
+    width: 300px; 
+    height: 200px;
+    border: 1px solid black; 
+    margin: 3px;
+  }
+  
+  img {
+    width: 100%; 
+    height: 100%; 
+  }
+/*Crea un elemento con un alto de 100px.
+*/
+  .alto{
+    height: 100px; 
+    border: 1px solid black; 
+    padding: 10px; 
+    background-color: azure;
+    margin: 3px;
+  }
+  /*Crea un elemento con un alto del 50% de la ventana del navegador.
+*/
+element{
+    height: 50vh; 
+    border: 1px solid black; 
+    padding: 10px; 
+  }
+  

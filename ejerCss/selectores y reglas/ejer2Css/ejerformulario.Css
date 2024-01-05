@@ -1,0 +1,48 @@
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 249);
+      }
+  
+  button:hover {
+    background-color: #e18579;
+    padding: 1rem;
+    
+  }
+.formulario{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ background-color: rgb(200, 255, 209);
+
+}
+#form{
+  border: solid;
+  border-color: #165f16;
+  width: 50%;
+  height: 0%;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+
+}
+
+div{
+  margin: 1em;
+  font-size: 30px;
+}
+h1{
+  text-align: center;
+  background-color: #67e472;
+}
+#opciones:hover{
+  background-color: #acafe0;
+}
+.form1{
+  padding: 10px;
+  width: 300px;
+}
+
+

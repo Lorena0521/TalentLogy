@@ -1,0 +1,10 @@
+.box-float img{
+    width: 250px;
+    height: 250px;
+    float:left;
+    top: 100px;
+    
+}
+.box-float{
+    font-size: 30px;
+}

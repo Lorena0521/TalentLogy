@@ -1,0 +1,59 @@
+body {
+  background-color: azure;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  text-align: center;
+  list-style: none;
+  display: inline-flex;
+}
+li:hover {
+  color: rgb(102, 153, 7);
+}
+.imagen img {
+  border: solid 1px red;
+  border-radius: 10px;
+  margin: 20px 50px
+}
+button:hover {
+  background-color: rgb(243, 214, 139);
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: green;
+}
+h1,
+h2 {
+  color: blue;
+  box-shadow: inset;
+  text-align: center;
+}
+.mayusculas{
+  text-transform: uppercase;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+tr,
+td {
+  border: 2px solid hsl(0, 51%, 58%);
+  border-collapse: collapse;
+
+}
+tr:nth-child(odd) {
+  background-color: rgb(247, 210, 210);
+}
+tr:nth-child(even) {
+  background-color: #fff;
+}

@@ -1,0 +1,40 @@
+<!--Página de Contacto: Crea una página de contacto con campos para nombre, 
+    correo electrónico y mensaje.-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            form{
+                padding: 200px 200px;
+                margin: 2px 1em 0 auto;
+                background: rgba(172, 228, 176, 0.644)
+
+            }
+        </style>
+      
+    </head>
+    <body>
+        <div> <h1>contactame</h1> </div>
+
+        <div >
+            <form action="https://formsubmit.co/your@email.com" method="POST" >
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="name"> <br>
+                
+                <label for="Email">Email</label>
+                <input type="email" name="Email"> <br>
+
+                <label for="mensaje">Mensaje</label>
+                <input type="text" name="mensaje"> <br>
+
+                <input type="text" value="Enviar">
+            </form>
+        </div>
+    </body>
+    </html>

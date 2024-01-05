@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: rgb(209, 194, 180);
+    margin: 20px;
+    
+}
+header, footer{
+    border-style: solid green;
+    background-color: white ;
+    text-align: center;
+}
+nav{
+    -ms-text-combine-horizontal: all;
+  
+}
+section{
+    color: rgb(5, 0, 0);
+    border-radius: 30px;
+    background-color: rgb(235, 231, 214);
+    padding: 1px;
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    border-radius: 30px;
+    background-color: aquamarine;
+    padding: 20px;
+}
+h2{
+text-align: center;
+color:rgb(15, 15, 15);
+}
+a{
+    color: rgb(12, 42, 234);
+}
+a:hover{
+    color: rgb(97, 191, 35);
+
+}

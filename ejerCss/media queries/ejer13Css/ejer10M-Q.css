@@ -1,0 +1,8 @@
+.contenido-pantalla{
+    display: block;
+}
+@media print{
+    .contenido-pantalla{
+        display: none; /*al imprimir no aparece*/
+    }
+}

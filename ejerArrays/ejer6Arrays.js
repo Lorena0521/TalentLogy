@@ -2,6 +2,6 @@
 
 let numero = "1,3,5,7,9,12";
 
- let new_array = numero.split(Number[","]); 
+ let new_array = numero.split([","]); //split: divide un objeto de tipo String en un array
 
 console.log(new_array);

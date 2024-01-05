@@ -1,0 +1,133 @@
+/*Creación de un Menú de Navegación Horizontal: Crea un menú de 
+navegación horizontal utilizando una lista desordenada <ul>
+y cambia el estilo de los elementos de menú cuando se coloquen sobre ellos.*/
+body{
+  background-color: rgb(250, 250, 247);
+}
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+  padding: 10px;
+  border-bottom: 10px;
+}
+ a:hover {
+  color:rgb(255, 255, 30);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgb(24, 22, 22);
+}
+#opciones {
+  background-color: rgb(235, 243, 245);
+  color: brown;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  opacity: .5;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/*Diseño de una Tarjeta de Producto: Diseña una tarjeta de producto con una imagen,
+título, descripción y precio. Estiliza la tarjeta para que se vea atractiva y bien organizada*/
+
+.tarjeta {
+  max-width: 220px;
+  max-height: 480px;
+  background-color: rgb(237, 228, 228);
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+.imagen {
+  border-radius: 10px;
+  border: solid 1px rgb(127, 122, 122);
+  position: absolute;
+  margin: 10px auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ 
+}
+.contenido {
+  background-color: rgb(237, 185, 185);
+  border-radius: 10px;
+  margin-top: 230px;
+
+}
+.titulo, .descripcion, .precio, .barra-progreso{
+  text-align: center;
+}
+.titulo,.precio, .descripcion{
+  color:rgb(8, 40, 166);
+}
+table,
+td,
+th {
+  border: 1px solid rgb(5, 5, 5);
+  margin-top: 50px;
+  text-align: center;
+}
+tr:nth-child(odd) {
+  background-color: #f0d3d3;
+}
+#principal{
+  color: rgb(34, 34, 236);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+}

@@ -1,0 +1,8 @@
+body{
+    background-color: antiquewhite;
+}
+@media only screen and (max-width:480px){
+    body{
+        background-color: aquamarine;
+    }
+}

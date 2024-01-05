@@ -1,0 +1,81 @@
+<!--Diseño de una Galería de Imágenes con Lightbox: Crea una galería de imágenes con
+    miniaturas y un efecto lightbox para ver las imágenes en tamaño completo cuando se hace clic en ellas.-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link rel="stylesheet" href="ejer8Css.css">
+        <title>Document</title>
+    </head>
+    
+    
+    <body>
+        <h1>Galeria de imagenes</h1>
+        <span class="linea"></span>
+        <section class="galeria">
+            <div class="galery">
+                <a href="#imagen1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWO83SW2OUweeTmKGjYevxbwqnEvUbC0NH5AUT-iICXA_2gP491rPkPwdouFjQ1lDJm18&usqp=CAU"></a>
+                <a href="#imagen2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyyI04QB7ZvCrzUdJCa10yrDPdHQxU0AwCGJZmj-SqfUVuTSVKqklz69D4Njv6CY6oBs8&usqp=CAU"></a>
+                <a href="#imagen3"><img src="https://img.freepik.com/fotos-premium/flores-praderas-laderas-bosques-fondos-pantalla-ilustraciones-hermosos-paisajes-fondo_912113-13728.jpg"></a>
+            </div>
+            <div class="galeri">
+                <a href="#imagen4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNb7Z4m1lhJQj64WbC2Bux9JJA4_teWxi4cA&usqp=CAU"></a>
+                <a href="#imagen5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcdmW6wqoeNIxnZC8Hsz4rU8pqmYEmv9n4w&usqp=CAU"></a>
+                <a href="#imagen6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oh0-fjYigUdt85x7D3_FjNDtx9xXA_-7vA&usqp=CAU"></a>
+            </div>
+        </section>
+    
+        <article class="light-box" id="imagen1">
+            <a href="#imagen6" class="next">&#60;</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWO83SW2OUweeTmKGjYevxbwqnEvUbC0NH5AUT-iICXA_2gP491rPkPwdouFjQ1lDJm18&usqp=CAU" alt="">
+            <a href="#imagen2" class="next">></a>
+            <a href="" class="close">X</a>
+
+        </article>
+        <article class="light-box" id="imagen2">
+            <a href="#imagen1" class="next">&#60;</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyyI04QB7ZvCrzUdJCa10yrDPdHQxU0AwCGJZmj-SqfUVuTSVKqklz69D4Njv6CY6oBs8&usqp=CAU"
+             alt="">
+            <a href="#imagen3" class="next">></a>
+            <a href="" class="close">X</a>
+
+        </article>
+        <article class="light-box" id="imagen3">
+            <a href="#imagen2" class="next">&#60;</a>
+            <img src="https://img.freepik.com/fotos-premium/flores-praderas-laderas-bosques-fondos-pantalla-ilustraciones-hermosos-paisajes-fondo_912113-13728.jpg"
+             alt="">
+            <a href="#imagen4" class="next">></a>
+            <a href="" class="close">X</a>
+
+        </article>
+        <article class="light-box" id="imagen4">
+            <a href="#imagen3" class="next">&#60;</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNb7Z4m1lhJQj64WbC2Bux9JJA4_teWxi4cA&usqp=CAU" alt="">
+            <a href="#imagen5" class="next">></a>
+            <a href="" class="close">X</a>
+
+        </article>
+        <article class="light-box" id="imagen5">
+            <a href="#imagen4" class="next">&#60;</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcdmW6wqoeNIxnZC8Hsz4rU8pqmYEmv9n4w&usqp=CAU"
+            alt="">
+            <a href="#imagen6" class="next">></a>
+            <a href="" class="close">X</a>
+
+        </article>
+        <article class="light-box" id="imagen6">
+            <a href="#imagen5" class="next">&#60;</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oh0-fjYigUdt85x7D3_FjNDtx9xXA_-7vA&usqp=CAU"
+         alt="">
+            <a href="#imagen1" class="next">></a>
+            <a href="" class="close">X</a>
+
+        </article>
+    </body>
+    
+    </html>

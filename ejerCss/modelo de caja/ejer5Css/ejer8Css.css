@@ -1,0 +1,32 @@
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  .row {
+    display: table-row;
+  }
+  
+  .cell {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .cell span {
+    font-weight: bold;
+    text-align: center;
+    text-justify: auto;
+  }
+  span {
+    padding: auto;
+  }
+  body {
+    font-family: "arial";
+    background: #f4f4f4;
+    float: calc(50px 50px);
+    top: 200px;
+    right: 100px;
+    padding: 20px;
+  }

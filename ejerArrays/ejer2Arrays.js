@@ -7,7 +7,7 @@ let numero =[1,5,6,2,4,8,9,3,7,8]
 
 let suma = numero.reduce((prev, item)=>item +=prev);//
 numero.length// datos o longitud
-/* console.log(media) */
+
 
 let media = suma/numero.length;
  

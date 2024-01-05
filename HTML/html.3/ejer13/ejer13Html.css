@@ -1,0 +1,22 @@
+header{
+    background-color: rgb(233, 223, 223);
+    padding: auto;
+     color: blue;
+    font-size: large;
+    }
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 80px;
+    background-color: lightblue;
+  
+}
+
+

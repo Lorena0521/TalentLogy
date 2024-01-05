@@ -5,7 +5,7 @@
 
 function operaciones(){
 
-const menu  = +prompt("Ingrese una opción:  /1. Sumar /   2. Restar /   3. Multiplicar /   4. Dividir /   5. Salir");
+const menu  = +prompt("Ingrese una opción:\n  /1. Sumar\n /   2. Restar\n /   3. Multiplicar\n /   4. Dividir\n /   5. Salir\n");
 
     let num1 = +prompt("Ingrese el primer número:");
     let num2 = +prompt("Ingrese el segundo número:");

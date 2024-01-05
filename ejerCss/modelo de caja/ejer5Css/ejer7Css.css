@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("https://previews.123rf.com/images/pornpatmalajak/pornpatmalajak1608/pornpatmalajak160800007/64093865-vi%C3%B1eta-abstracta-degradado-de-color-color-azul-dise%C3%B1o-de-fondo-degradado-oscuro-abstracto.jpg");
+    width: 100%;
+  }
+  .form {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    position:relative;
+    top: 200px;
+    border-radius: 4px;
+    font-family: "monospace";
+    color: #fff;
+    box-shadow: 7px 13px 37px #000;
+  }
+  .form f4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .controls {
+    width: 100%;
+    padding: 10px;
+    background: #24303c;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    border: 1px solid #1f53c5;
+    font-family: "monospace";
+    font-size: 18px;
+    color: #fff;
+  }
+  .form p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .form a:hover {
+    color: yellow;
+    text-decoration: underline;
+  }
+  .form .bottom {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 1epx 0;
+    font-size: 16px;
+  }

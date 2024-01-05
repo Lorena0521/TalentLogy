@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+}
+li {
+  font-size: 20px;
+  color: rgb(49, 134, 49);
+  margin: 10px;
+  padding: 5px;
+  transition: color 0.3s, opacity 0.2s;
+}
+li:hover{
+    opacity: 0.5;
+}
+li:active{
+    color: rgb(255, 0, 0);
+}
+p{
+    font-size: 20px;
+    color: blueviolet;
+}

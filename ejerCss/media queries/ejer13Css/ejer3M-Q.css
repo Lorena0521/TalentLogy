@@ -1,0 +1,8 @@
+.element{
+    margin: 20px;
+}
+@media only screen and (min-width:1200px){
+    .element{
+margin: 40px;
+    }
+}

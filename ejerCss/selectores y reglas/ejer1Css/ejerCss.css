@@ -1,0 +1,83 @@
+/*Cambiar el color del texto de un encabezado: Selecciona un elemento de encabezado (<h1>, <h2>, etc.) 
+y cambia el color de texto a tu elección utilizando un selector de tipo.
+*/
+body{
+  border:solid ;
+  border-radius: 30px;
+  border-color: #000000;
+  
+}
+h1{
+    color: rgb(18, 16, 16);
+    text-shadow: 2px 1px rgb(156, 235, 10);
+   
+}
+
+/*Estilo de enlaces: Cambia el color y la decoración de texto (subrayado, por ejemplo) de todos los enlaces (<a>) en tu página web.*/
+
+
+a{
+  text-decoration: none;  
+  color: rgb(156, 36, 207);
+}
+/*Pseudo Clases: Agrega un efecto de cambio de color al pasar el mouse sobre los enlaces (<a>) utilizando la pseudo-clase :hover.*/
+
+a:hover{
+  color: blue;
+}
+/*Estilizar una clase: Crea una clase llamada "destacado" y aplícala a varios elementos en 
+    tu página para cambiar el color de fondo y el color de texto.*/
+
+.destacado{
+   background-color: rgb(255, 220, 172);
+   color: blue; 
+}
+/*Bordes y márgenes: Agrega un borde y un margen a las imágenes (<img>) en tu página para darles un aspecto más definido.*/
+
+img{
+border-color: rgb(219, 10, 10);
+border-radius: 30px;
+border-style: double;
+width: 800px;
+height: 500;
+}
+/*Alineación de texto: Crea una clase llamada "centrar-texto" 
+      y úsala para centrar horizontalmente el texto en cualquier elemento al que apliques esta clase.*/
+
+.centrar-texto{
+  text-align: center;
+}
+/*Estilo de lista: Cambia el estilo de viñetas o números de una lista desordenada (<ul>) o una lista ordenada (<ol>).*/
+ul{
+  list-style-type:square;
+}
+/*Dimensiones y posición: Crea una clase llamada "caja" y aplícala a varios elementos para establecer un ancho y 
+una altura específicos. Luego, utiliza otra clase llamada "centro" para centrar estos elementos en la página.*/
+
+.caja {
+  width: 900px;
+  height: 130px;
+  background-color: #89c3e9;
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; 
+}
+
+button{
+  background-color: #baeddb;
+  border: 2px solid #000000;
+  padding: 5px;
+}
+/*Estilo de encabezados en diferentes secciones: Cambia el color de fondo de los encabezados en 
+  diferentes secciones de tu página. Utiliza selectores de tipo y de clase para lograrlo.*/
+h2{
+  color: rgb(0, 38, 255);
+  background-color: rgb(251, 236, 218);
+}
+h3{
+  color: rgb(106, 171, 7);
+}

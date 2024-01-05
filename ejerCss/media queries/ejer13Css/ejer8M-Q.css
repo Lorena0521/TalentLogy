@@ -1,0 +1,14 @@
+div{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: coral;
+}
+p{
+    padding-top:30px ;
+}
+@media print{
+    div{
+        border: 2px solid rgb(202, 14, 219); /*al momento de imprimir se muestra el borde*/
+    }
+}

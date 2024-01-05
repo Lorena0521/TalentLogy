@@ -1,0 +1,39 @@
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  border: 1px solid rgb(229, 83, 16);
+  padding: 20px;
+}
+input,
+textarea {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid rgb(233, 86, 17);
+  border-radius: 10px;
+  width: 90%;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+input:focus, textarea:focus{
+    background-color: #f0f8ff;
+}
+form button{
+    padding: 10px;
+    background-color: violet;
+    margin-left:40%;
+    border-radius: 10px;
+}
+input::before,
+textarea::before {
+  content: "¡"; 
+  margin-right: 5px;
+  color: #555;
+}
+input::after,
+textarea::after {
+  content: attr(placeholder);
+  margin-left: 5px;
+  color: #aaa;
+}
+

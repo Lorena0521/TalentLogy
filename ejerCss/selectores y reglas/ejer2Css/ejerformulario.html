@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejerformulario.Css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id="form">
+        <h1>formulario</h1>
+        <div>
+            <!--Maquetación de un Formulario de Registro: Diseña un formulario de registro con 
+   campos para nombre, correo electrónico, contraseña, etc. Estiliza los campos, 
+   las etiquetas y agrega validación de campos obligatorios.-->
+            <form class="formulario">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form1" name="nombre">
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form1" name="email">
+                </div>
+                <div>
+                    <label for="opciones">Selecciona una opción:</label>
+                    <select id="opciones" name="opciones">
+                        <option>Compra</option>
+                        <option>Credito</option>
+                        <option>mas detalles</option>
+                    </select>
+                    
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form1" name="mensaje" rows="4"></textarea>
+
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+</body>
+
+</html>
