@@ -1,0 +1,15 @@
+/*Crea un elemento con un ancho del 50% de la ventana
+ del navegador, independientemente del tamaño de la pantalla.
+*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.element{
+    width: 50vw;
+    height: 300px;
+    background-color: crimson;
+    color: #fff;
+    padding: 10px;
+}

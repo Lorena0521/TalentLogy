@@ -1,0 +1,17 @@
+/*Cambiar Fondo al Pasar el Ratón: Utiliza eventos de hover
+ para cambiar el fondo de un elemento cuando el usuario
+  pasa el ratón sobre él.
+*/
+
+.cambio-fondo {
+    width: 100%;
+    height: 800px;
+    background-color: #e0eb7f;
+    text-align: center;
+    font-size: 35px;
+    line-height: 100px;
+    transition: background-color 0.5s ease;
+}
+.cambio-fondo:hover{
+    background-color: deeppink;
+}

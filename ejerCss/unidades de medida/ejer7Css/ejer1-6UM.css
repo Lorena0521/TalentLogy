@@ -54,11 +54,5 @@ body {
     background-color: azure;
     margin: 3px;
   }
-  /*Crea un elemento con un alto del 50% de la ventana del navegador.
-*/
-element{
-    height: 50vh; 
-    border: 1px solid black; 
-    padding: 10px; 
-  }
+
   

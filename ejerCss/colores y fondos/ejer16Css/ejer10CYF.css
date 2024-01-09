@@ -1,0 +1,13 @@
+/*Fondo Fijo al Desplazar: Crea un bloque con un fondo fijo
+ que permanezca en su posición incluso cuando el usuario
+  desplaza la página.
+*/
+body{
+    height: 200vh;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnSKSaV-7_70O95NDhS7JUudHXOE-a65U0XA&usqp=CAU');
+color: #fff;
+  }
+  .container{
+  padding: 30px;
+  text-align: center;
+  }

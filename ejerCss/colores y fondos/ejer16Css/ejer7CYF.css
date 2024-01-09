@@ -1,0 +1,12 @@
+/*Fondo de Ancho Completo: Establece un fondo que se extienda
+ por todo el ancho de la pantalla, incluso si el contenido no lo hace.
+*/
+
+.fondo-completo{
+    width: 100vw;
+    height: 550px;
+    background-color: rgb(159, 187, 111);
+    padding: 30px;
+    text-align: center;
+    color: #ffff;
+}

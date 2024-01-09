@@ -1,0 +1,49 @@
+/*Diseño de Cuadrícula Responsivo: Crea una cuadrícula de tres
+ columnas que se convierta en una cuadrícula de dos columnas 
+ cuando el ancho de la pantalla sea inferior a 768px y una sola
+  columna cuando sea inferior a 480px.
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; 
+}
+
+.grid-item {
+    box-sizing: border-box;
+    flex: 1;
+    padding: 10px;
+    min-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-item {
+        flex-basis: 50%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-item {
+        flex-basis: 100%; 
+    }
+}
+
+
+.grid-item {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}

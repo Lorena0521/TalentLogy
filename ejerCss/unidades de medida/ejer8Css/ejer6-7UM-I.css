@@ -1,0 +1,21 @@
+/*Crea un elemento con un alto de 100px en la pantalla de un monitor de 1920x1080 píxeles.
+*/
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mi-elemento {
+    height: 100px;
+    background-color: #d5db34;
+  }
+  /*Crea un elemento con un alto del 50% de la ventana del navegador,
+   independientemente del tamaño de la pantalla.
+*/
+  .elemento{
+    height: 50vh;
+    background-color: aquamarine;
+    width: 300px;
+    margin: 10px;
+  }
+  

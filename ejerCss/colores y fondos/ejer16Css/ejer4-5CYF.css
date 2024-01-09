@@ -1,0 +1,24 @@
+/*Fondo de Opacidad: Crea un bloque con un color de fondo
+ semitransparente utilizando la propiedad rgba para el color de fondo.
+*/
+.bloque-opacidad {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(71, 221, 71, 0.2);
+    color: #000000;
+    padding: 30px;
+    text-align: center;
+}
+
+/*Fondo con Patrón Repetido: Utiliza una imagen pequeña como patrón de fondo repetido en un área específica de tu página.
+*/
+.area-repetida{
+    width: 800px;
+    height: 500px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZFAtVufs4ySwxHKYwA6f6jRTiJZ0IuqUQCg&usqp=CAU');
+    background-repeat: repeat;
+    color: #f80fc2;
+    padding: 50px;
+    text-align: center;
+
+}

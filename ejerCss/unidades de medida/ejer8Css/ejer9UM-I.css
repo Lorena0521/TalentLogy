@@ -1,0 +1,22 @@
+
+/*Crea un elemento con un alto que se ajuste al alto de su contenedor, 
+pero no se extienda más allá de los límites de la ventana del navegador.
+*/
+
+body,html {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .contenedor {
+    height: 80vh; 
+    min-height: 100px;
+    background-color: #f0f0f0; 
+
+  }
+
+  .alto {
+    height: 100Vh;
+    width: 100px; 
+    background-color: #3498db; 
+  }

@@ -1,0 +1,18 @@
+/*Texto sobre Fondo Gradiente: Aplica un fondo con gradiente
+ y coloca texto encima de él. Experimenta con diferentes 
+ combinaciones de colores.
+*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(0, 146, 250), red);
+    color: #ffffff;
+    text-align: center;
+}
+.gradiente{
+    padding: 20px;
+}

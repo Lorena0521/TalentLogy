@@ -1,0 +1,15 @@
+/*Fondo de Página: Cambia el color de fondo de toda la página utilizando
+la propiedad background-color.
+    */
+body{
+    background-color: gainsboro;
+}
+
+/*Cambio de Color de Texto: Selecciona un elemento en tu página
+ y cambia su color de texto utilizando diferentes métodos: nombres
+  de colores, códigos hexadecimales o valores RGB.
+*/
+.elemento{
+    color:rgb(0, 128, 0); /*RGB*/
+    /*color: #00FF00;    codigo hexadecimales */ 
+}

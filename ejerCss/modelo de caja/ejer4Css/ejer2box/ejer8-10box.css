@@ -1,0 +1,79 @@
+/*Crea una caja con un borde de imagen que cambie de color a medida
+ que el usuario pasa el cursor por encima.
+*/
+
+.box8 {
+    width: 300px;
+    height: 250px;
+    border: 5px solid #22de5e;
+    transition: border-color 0.3s ease;
+}
+
+.box8:hover {
+    border-color: #ff0000;
+}
+
+.box8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Crea una caja con un borde de imagen que se desvanezca
+    a medida que el usuario aleja el cursor.
+*/
+.box9 {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 10pc;
+}
+
+.box9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin:auto;
+}
+
+.box9::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.box9:hover .borde {
+    opacity: 0;
+}
+
+/*Crea una caja con un borde de imagen que se mueva y cambie de color a medida
+    que el usuario pasa el cursor por encima.*/
+.box10 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.box10 img {
+    width: 300px;
+    height: 250px;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.box10:hover img {
+    transform: translate(10px, -10px);
+    border: 5px solid #ff0000;
+}
+
+.container {
+    display:flex;
+    
+}

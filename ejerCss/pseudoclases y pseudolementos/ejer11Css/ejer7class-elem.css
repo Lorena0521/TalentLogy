@@ -1,0 +1,7 @@
+/*Estiliza el último elemento de una lista desordenada (<ul>)
+ dándole un borde de 2 píxeles y color verde.
+*/
+ul li:last-child {
+    border: 2px solid green; 
+    padding: 8px; 
+  }

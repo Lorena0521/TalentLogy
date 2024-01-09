@@ -1,0 +1,15 @@
+/*Crea un elemento con un alto del doble del tamaño de la fuente del
+ elemento padre, pero solo si el tamaño de la fuente es inferior a 16px.
+*/
+body {
+    font-size: 12px; 
+  }
+
+  .contenedor {
+    font-size: 12px; 
+  }
+
+  .element {
+    height: 2em; 
+    background-color: #d2bff5;
+  }

@@ -1,0 +1,6 @@
+/*Cuando un usuario hace clic en un enlace (<a>), 
+haz que el fondo del enlace se vuelva amarillo.
+*/
+a:active {
+    background-color: yellow; 
+  }

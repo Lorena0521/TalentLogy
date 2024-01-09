@@ -1,0 +1,12 @@
+/*Encabezado con Fondo y Texto Blanco: Diseña un encabezado con un fondo
+ oscuro y texto blanco para mejorar la legibilidad.
+*/
+
+body{
+    background-color: #000000;
+}
+h1, p{
+    color: #ffff;
+    text-align: center;
+    padding: 50px;
+}

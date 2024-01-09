@@ -1,0 +1,36 @@
+/*Crea dos reglas CSS para establecer el color del texto de un
+ elemento h1. Una regla debe establecer el color en rojo 
+ y la otra en azul.
+*/
+h1.regla {
+    color: rgb(255, 0, 0)
+}
+
+h1.regla {
+    color: #0000ff;
+    /*tiene mayor especificidad por que es el que sigue en el codigo */
+}
+
+/*Crea tres reglas CSS para establecer el color del texto de un
+   elemento p. Una regla debe establecer el color en rojo para todos
+ los elementos p, la otra en azul para todos los elementos p con
+la clase mi-clase y la tercera en verde para todos los elementos
+p con el id mi-id.
+*/
+ p{
+    color: #ff0000;
+ }
+ p.mi-clase{
+    color: rgb(0, 0, 255);
+ }
+ p#mi-id{
+    color: green; /* tiene mayor especificidad el id porque Tiene una 
+    especificidad de 101 puntos los 100 del id y 1 por el elemento p*/
+ }
+
+ /*Crea una regla CSS para establecer el color del texto de un
+  elemento h1 con la clase mi-clase.
+*/
+h1.mi-clase{
+    color: #ff77ff; /*el colore del h1 es color rosado*/
+}

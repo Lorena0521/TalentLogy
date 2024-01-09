@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.elemento-fondo {
+    width: 95%;
+    height: 570px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNrM-H5sej3CD0AqY7Zg--D1z5kk5FqJGN8w&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}

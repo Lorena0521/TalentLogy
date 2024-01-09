@@ -1,0 +1,15 @@
+/*Crea un elemento con un ancho que herede el tamaño de su elemento
+ padre, pero no sea inferior a 100px.
+*/
+.contenedor {
+    width: 200px; 
+    background-color: #ecf0f1; 
+}
+
+.tamaño {
+    width: 100%; 
+    min-width: 100px;
+    height: 100px; 
+    background-color: #045b0c; 
+    color: #fff; 
+}

@@ -1,0 +1,7 @@
+ul li:first-child {
+    background-color: grey;
+    /* Color de fondo para el primer elemento */
+}
+li{
+    list-style: none;
+}

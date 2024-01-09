@@ -1,0 +1,8 @@
+/*Antes de cada elemento de una lista ordenada (<ol>), 
+añade un icono de flecha utilizando el pseudoelemento ::before.
+*/
+ol li::before {
+    content: '\00BB'; 
+    margin-right: 8px; 
+    color: blue; 
+  }

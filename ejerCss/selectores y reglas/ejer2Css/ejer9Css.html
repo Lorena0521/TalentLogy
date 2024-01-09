@@ -14,18 +14,31 @@
 </head>
 
 <body>
-<form class="formulario">
-        <label for="name">nombre completo</label>
-        <input type="text" id="name">
+    <div class="comment-box">
+        <h2>Deja tu comentario</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">correo electrónico</label>
-        <input type="email" id="email">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="comentario">comentario</label>
-        <textarea name="comentario" id="commmit" cols="30" rows="10"></textarea>
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
 
-        <button>agregar comentario</button>
-    </form>
+            <button type="submit">Publicar comentario</button>
+        </form>
+
+        <div class="comment-list">
+            <h2>Comentarios</h2>
+            <ul>
+                <!-- Los comentarios se agregarán dinámicamente aquí -->
+                <li><strong>Usuario:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore qui
+                    perspiciatis adipisci odio vitae, eos impedit illo, saepe aliquam molestias consequuntur sint cumque
+                    enim unde illum tenetur deserunt porro rerum.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

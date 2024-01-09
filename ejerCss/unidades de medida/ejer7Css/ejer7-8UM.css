@@ -1,0 +1,25 @@
+  /*Crea un elemento con un alto del 50% de la ventana del navegador.
+*/
+  .element {
+      height: 50vh;
+      width: 300px;
+      border: 1px solid black;
+      padding: 10px;
+  }
+
+  /*Crea un elemento con un alto del doble del tamaño
+   de la fuente del elemento padre.
+*/
+
+  .contenedor {
+      font-size: 30px;
+  }
+
+  .mi-elemento {
+      width: 200px;
+      height: 60px; 
+      background-color: rgb(113, 51, 6);
+      margin-top: 10px;
+      color: #ffffff; 
+      text-align: center;
+  }
