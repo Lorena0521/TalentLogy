@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Forms (Formularios): Crea un formulario de registro que utilice los 
+    estilos predefinidos de Bootstrap. Incluye campos para nombre, correo 
+    electrónico, contraseña y una casilla de verificación para aceptar términos
+     y condiciones. Implementa también un botón de envío con estilos personalizados.
+-->
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Formulario de Registro</title>
+  <style>
+    .custom-submit-btn {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+    }
+
+    /* Puedes agregar más estilos personalizados según tus necesidades */
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="terms" required>
+        <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+      </div>
+
+      <button type="submit" class="btn custom-submit-btn mt-3">Registrarse</button>
+    </form>
+  </div>
+
+  <!-- Incluye el script de Bootstrap y cualquier otro script necesario -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+</body>
+</html>
