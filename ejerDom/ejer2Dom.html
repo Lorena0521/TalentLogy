@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Agregar y Eliminar Elementos: Crea un nuevo elemento (por ejemplo,
+un párrafo o una lista) dinámicamente con JavaScript y agrégalo al DOM.
+     Luego, elimina un elemento existente.
+-->
+
+    <div id="container"></div>
+
+    <script>
+
+        /*elemento agregado*/
+        var nuevoElemento = document.createElement('p');
+        nuevoElemento.textContent = '¡Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, illum. Iusto veritatis animi reprehenderit!';
+
+        var container = document.getElementById('container');
+        container.appendChild(nuevoElemento);
+
+        /* elemento eliminado*/
+
+      var elementoExistente = document.querySelector('p');
+        if (elementoExistente) {
+            elementoExistente.remove();
+            console.log('elemento existente eliminado correctamente')
+        } else {
+            console.log('no se encontro ningun elemento exixtente para eliminar')
+        } 
+  </script>
+</body>
+
+</html>
