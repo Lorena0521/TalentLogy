@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Comentarios Dinámicos: Utiliza JavaScript para agregar un comentario
+         dinámico a tu código HTML. Por ejemplo, puedes agregar un comentario 
+         que indique la fecha y hora en que se realizó una acción específica.
+-->
+
+    <div id="comment-container">
+
+        <script>
+
+            var commentContainer = document.getElementById('comment-container');
+
+            var comentario = document.createComment('esta accion se realizo:' + fechaYHora());
+
+            commentContainer.appendChild(comentario);
+
+            function fechaYHora() {
+                var tiempo = new Date();
+                var opcionFecha = { weekday: 'long', minute: '2-digit', month: 'long', day: 'numeric' };
+                var opcionHora = { hour: 'numeric', minute: '2-digit', second: 'numeric', hour12: true }
+
+                var fechaFormateada = tiempo.toLocaleDateString('es-ES', opcionFecha);
+                var horaFormateada = tiempo.toLocaleTimeString('es-ES', opcionHora);
+            
+            return fechaFormateada + ' a las ' + horaFormateada;
+            }
+        
+
+        </script>
+    </div>
+</body>
+
+</html>

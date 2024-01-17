@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+    Crear y Manipular Listas: Crea una lista (ul o ol) vacía en el DOM con JavaScript. 
+    Luego, agrega elementos a la lista dinámicamente.
+    -->
+    <div id="container">
+lista
+    </div>
+    <script>
+        var MiLista = document.createElement('ol');
+
+        for (var i = 1; i <= 5; i++) {
+            var nuevoElemento = document.createElement('li');
+            nuevoElemento.textContent = 'elemento' + i;
+            MiLista.appendChild(nuevoElemento);
+        }
+
+        var container = document.getElementById('container')
+
+        document.body.appendChild(MiLista);
+
+    </script>
+</body>
+
+</html>
