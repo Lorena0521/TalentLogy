@@ -1,0 +1,21 @@
+*{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 100px;
+}
+button{
+    margin: 30px;
+    background-color: beige;
+}
+button:hover{
+    background-color: rgb(150, 221, 78);
+}
+.elemento{
+    color: blue;
+    font-size: larger;
+    margin: 30px;
+}

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ejer6Dom.css">
+  <title>Document</title>
 </head>
+
+<style>
+
+</style>
+
 <body>
-   <!--Cambiar Estilos Dinámicamente: Selecciona un elemento y cambia su estilo
+  <!--Cambiar Estilos Dinámicamente: Selecciona un elemento y cambia su estilo
      (por ejemplo, el color de fondo o el tamaño del texto) utilizando JavaScript
       en respuesta a algún evento, como un clic en un botón.
 -->
 
+  <div id="elemento">
+    este es mi elemento
+  </div>
 
+  <button id="boton">Haz click</button>
+
+  <script>
+var elemeto = document.getElementById('elemento');
+var boton = document.getElementById('boton');
+
+boton.addEventListener('click', ()=>{
+elemeto.classList.toggle('elemento')
+})
+
+  </script>
 </body>
+
 </html>

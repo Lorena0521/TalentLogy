@@ -26,7 +26,7 @@
 
             function fechaYHora() {
                 var tiempo = new Date();
-                var opcionFecha = { weekday: 'long', minute: '2-digit', month: 'long', day: 'numeric' };
+                var opcionFecha = { weekday: 'long', month: 'long', day: 'numeric' };
                 var opcionHora = { hour: 'numeric', minute: '2-digit', second: 'numeric', hour12: true }
 
                 var fechaFormateada = tiempo.toLocaleDateString('es-ES', opcionFecha);
