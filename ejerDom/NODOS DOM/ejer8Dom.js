@@ -1,0 +1,3 @@
+document.addEventListener(DOMventListener, funtion (){
+
+})
