@@ -1,0 +1,15 @@
+.Formulario {
+  display: inline-block;
+  border: 2px solid rgb(134, 132, 132);
+  border-radius: 5px;
+  box-shadow: darkslategray;
+  margin-left: 300px;
+}
+input,
+label,
+textarea {
+  padding: 5px;
+  margin-top: 10px;
+  width: 100%
+  ;
+}

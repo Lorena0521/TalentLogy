@@ -9,11 +9,27 @@
 </head>
 
 <body>
-    <!--Galería de Imágenes con Descripciones: Crea una galería de imágenes con miniaturas 
-    y descripciones. Al hacer clic en una miniatura, la imagen debería mostrarse en
-     tamaño completo junto con su descripción. Utiliza eventos para cambiar dinámicamente
-    el contenido.
+    <!--Reproductor de Música Interactivo: Desarrolla un reproductor de música interactivo.
+     Permite a los usuarios reproducir, pausar y cambiar de canción. Muestra dinámicamente 
+     el título y el artista de la canción actualizando el DOM.
 -->
+
+    <div id="player">
+        <audio id="audioPlayer" controls>
+            tu navegador no soporta el audio.
+        </audio>
+
+        <button onclick="playPause()">reproducir/pausar</button>
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="1" oninput="setVolume()">>
+        
+        <select id="songSelector" onchange="changeSong()">
+            <option value="0">Canción 1</option>
+            <option value="1">Canción 2</option>
+
+        </select>
+    </div>
+
+    <script src="ejer2AYMDom.js"></script>
 </body>
 
 </html>
