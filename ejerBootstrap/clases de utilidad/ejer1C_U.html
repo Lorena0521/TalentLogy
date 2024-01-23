@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Administración de Usuarios</title>
+</head>
+
+<body>
+
+    <!--Gestión de Usuarios: Diseña una página de administración de usuarios. Utiliza clases
+         de Bootstrap para alinear y organizar información sobre usuarios, como nombres, correos
+          electrónicos y roles.
+-->
+    <div class="container mt-5">
+        <h2 class="mb-4">Gestión de Usuarios</h2>
+
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo Electrónico</th>
+                            <th scope="col">Rol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Usuario 1</td>
+                            <td>usuario1@example.com</td>
+                            <td>Administrador</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Usuario 2</td>
+                            <td>usuario2@example.com</td>
+                            <td>Usuario Regular</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuevo Usuario</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="usuario@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="rol" class="form-label">Rol</label>
+                                <select class="form-select" id="rol">
+                                    <option value="admin">Administrador</option>
+                                    <option value="regular">Usuario Regular</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+</div>
+</body>
+
+</html>
