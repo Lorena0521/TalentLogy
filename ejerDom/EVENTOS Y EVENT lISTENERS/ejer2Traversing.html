@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Creación de una Lista Dinámica: Crea una lista (<ul> o <ol>) dinámicamente
+         utilizando JavaScript. Permite que los usuarios agreguen elementos a la lista
+          mediante un formulario.    
+-->
+    <h1>Agregar a la lista</h1>
+
+    <div id="DinamicList">
+
+        <form class="form">
+            <label for="Producto">Producto</label>
+            <input type="text" id="Producto" placeholder="ingresa Producto">
+
+            <label for="Marca" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="Marca" placeholder="Marca">
+
+            <label for="cantidad" class="form-label">Example textarea</label>
+            <input class="form-control" id="cantidad"></input>
+
+            <button class="btn btn-primary">crear lista</button>
+        </form>
+    </div>
+
+
+    <script>
+
+        const DinamicList = document.createElement('ul');
+        DinamicList.appendChild(DinamicList);
+
+
+    </script>
+
+    
+</body>
+
+</html>

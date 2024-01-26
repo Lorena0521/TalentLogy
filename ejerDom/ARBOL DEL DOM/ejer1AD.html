@@ -16,14 +16,8 @@
 
     <body>
         <div class="container">
-            <header>
-                <h1>proyecto bootstrap</h1>
-                <nav class="nav">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </nav>
-            </header>
+
+            <h1>proyecto bootstrap</h1>
 
             <section>
                 <h2>Contenido principal</h2>
@@ -32,13 +26,13 @@
                     Ab aperiam eum doloremque voluptatibus sunt, adipisci labore blanditiis maiores recusandae,
                     exercitationem ipsa suscipit error quos.</p>
 
-                <footer>
-
-                    <p>&copy; 2024 Proyecto Bootstrap</p>
-
-                </footer>
             </section>
+
+            <nav id="lista">
+
+            </nav>
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"></script>
@@ -48,7 +42,21 @@
 
         <script>
 
+            var lista = document.getElementById("lista");
+            var valores = ["computador", "tablet", "celular", "audifonos", "portatil"];
+
+            valores.forEach(function (valor) {
+                var elemento = document.createElement("li");
+                var nuevoElemento = document.createTextNode(valor);
+
+
+
+                elemento.appendChild(nuevoElemento);
+
+                lista.appendChild(elemento);
+            });
         </script>
+
     </body>
 
     </html>

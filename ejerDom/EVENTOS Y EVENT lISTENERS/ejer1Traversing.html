@@ -8,9 +8,15 @@
     <title>Document</title>
 </head>
 <style>
-    .navbar {
-        display: inline-block;
+    .navbar a {
+        text-decoration: none;
+        display:flex;
     }
+    li{
+        list-style: none;
+    }
+
+  
 </style>
 
 <body>
@@ -20,11 +26,11 @@
 -->
 
     <div class="ChangeColor">
-        <div class="navbar">
+        <ul class="navbar">
             <li><a href="#">Incio</a></li>
             <li><a href="#">acerca de</a></li>
             <li><a href="#">contactanos</a></li>
-        </div>
+        </ul>
         <button id="ingresar">ingresar</button>
         <button id="registro">registro</button>
     </div>
@@ -34,10 +40,10 @@
 
         ColorElemento.forEach(elemento => {
             elemento.addEventListener('mouseover', () => {
-                Element.style.Color = 'red';
+                elemento.style.color = 'red';
             });
             elemento.addEventListener('mouseout', () => {
-                elemento.style.Color = 'black';
+                elemento.style.color = 'black';
             })
         })
         document.getElementById('ingresar').addEventListener('mouseover',() => {
