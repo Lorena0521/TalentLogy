@@ -15,27 +15,28 @@ un párrafo o una lista) dinámicamente con JavaScript y agrégalo al DOM.
      Luego, elimina un elemento existente.
 -->
 
-    <div id="container"></div>
-
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
     <script>
 
-        /*elemento agregado*/
+
         var nuevoElemento = document.createElement('p');
-        nuevoElemento.textContent = '¡Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, illum. Iusto veritatis animi reprehenderit!';
+        nuevoElemento.textContent = 'texto creado';
 
         var container = document.getElementById('container');
         container.appendChild(nuevoElemento);
 
-        /* elemento eliminado*/
 
-      var elementoExistente = document.querySelector('p');
+
+        var elementoExistente = document.querySelector('p');
         if (elementoExistente) {
             elementoExistente.remove();
             console.log('elemento existente eliminado correctamente')
         } else {
             console.log('no se encontro ningun elemento exixtente para eliminar')
         } 
-  </script>
+    </script>
 </body>
 
 </html>

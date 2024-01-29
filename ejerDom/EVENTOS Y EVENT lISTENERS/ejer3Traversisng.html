@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Eliminación de Elementos: Selecciona un conjunto de elementos y proporciona 
+        la capacidad de eliminarlos al hacer clic en un botón.
+-->
+
+<div class="container">
+    <h1 class="elemento">elementos a eliminar</h1>
+
+    <ul>
+        <li class="delete">elemeto 1</li>
+        <li class="delete">elemento 2</li>
+        <li class="delete">elemento 3</li>
+    </ul>
+</div>
+
+<script>
+    function addDeletebtn() {
+  const deleteBtn = document.getElementById("delete");
+
+  deleteBtn.textContent = "x";
+  deleteBtn.className = "btn-delete";
+
+  deleteBtn.addEventListener('click', (e) => {
+    const item = e.target.parentElement;
+    ul.removeChild(item);
+
+    const itemS = document.querySelectorAll("li");
+
+    if (items.length === 0){
+      completar.style.display = "block";
+
+    }
+  })
+  return deleteBtn;
+}
+
+</script>
+</body>
+</html>

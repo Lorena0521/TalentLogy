@@ -1,5 +1,5 @@
 *{
-    font-size: medium;
+    font-size: 70px;
     font-family: 'Courier New', Courier, monospace;
 }
 body{
@@ -10,6 +10,7 @@ body{
 button{
     margin: 30px;
     background-color: beige;
+    border-radius: 10PX;
 }
 button:hover{
     background-color: rgb(150, 221, 78);

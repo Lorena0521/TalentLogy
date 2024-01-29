@@ -45,3 +45,6 @@ function deleteTask(){
     const taskItem = this.closest('.taskItem');
     taskItem.removeChild(taskItem);
 }
+
+
+

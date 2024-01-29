@@ -14,30 +14,30 @@
          que indique la fecha y hora en que se realizó una acción específica.
 -->
 
-    <div id="comment-container">
-
-        <script>
-
-            var commentContainer = document.getElementById('comment-container');
-
-            var comentario = document.createComment('esta accion se realizo:' + fechaYHora());
-
-            commentContainer.appendChild(comentario);
-
-            function fechaYHora() {
-                var tiempo = new Date();
-                var opcionFecha = { weekday: 'long', month: 'long', day: 'numeric' };
-                var opcionHora = { hour: 'numeric', minute: '2-digit', second: 'numeric', hour12: true }
-
-                var fechaFormateada = tiempo.toLocaleDateString('es-ES', opcionFecha);
-                var horaFormateada = tiempo.toLocaleTimeString('es-ES', opcionHora);
-            
-            return fechaFormateada + ' a las ' + horaFormateada;
-            }
-        
-
-        </script>
+    <div id="commentContainer">
     </div>
+    <script>
+
+        var commentContainer = document.getElementById('commentContainer');
+
+        var comentario = document.createComment('esta accion se realizo:' + fechaYHora());
+
+        commentContainer.appendChild(comentario);
+
+        function fechaYHora() {
+            var tiempo = new Date();
+            var opcionFecha = { weekday: 'long', month: 'long', day: 'numeric' };
+            var opcionHora = { hour: 'numeric', minute: '2-digit', second: 'numeric', hour12: true }
+
+            var fechaFormateada = tiempo.toLocaleDateString('es-ES', opcionFecha);
+            var horaFormateada = tiempo.toLocaleTimeString('es-ES', opcionHora);
+
+            return fechaFormateada + ' a las ' + horaFormateada;
+        }
+
+
+    </script>
+
 </body>
 
 </html>

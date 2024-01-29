@@ -1,0 +1,30 @@
+input {
+  width: 80%;
+  padding: 10px;
+}
+button {
+  margin-top: 15px;
+}
+
+li {
+  border: solid 1px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(245, 240, 234);
+}
+button.btn-delete {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(230, 117, 117);
+}
+button.btn-completar {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+p{
+    color: blue;
+    text-align: center;
+    margin-top: 15px;
+}
