@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    .ChangeColor{
+        text-decoration: none;
+        display:flex;
+        justify-content:space-around;
+        margin-top: 20px;
+    }
+    
+
+  
+</style>
+
+<body>
+    <!--Cambio de Color al Pasar el Ratón: Selecciona varios elementos 
+        en tu página y cambia su color cuando el usuario pasa el ratón sobre 
+        ellos. Restaura el color original cuando el ratón sale del elemento.
+-->
+
+    <div class="ChangeColor">
+      
+        <button id="ingresar" class="btn btn-primary">ingresar</button>
+        <button id="registro" class="btn btn-primary">registro</button>
+        <button id="otro" class="btn btn-primary">otro</button>
+        <button id="salir" class="btn btn-primary">salir</button>
+    </div>
+
+    <script>
+        const ColorElemento = document.querySelectorAll('.ChangeColor #ingresar, #registro, #otro, #salir');
+
+        ColorElemento.forEach(elemento => {
+            elemento.addEventListener('mouseover', () => {
+                elemento.style.color = 'red';
+                elemento.style.backgroundColor = 'white';
+
+            });
+            elemento.addEventListener('mouseout', () => {
+                elemento.style.color = 'white';
+                elemento.style.backgroundColor = 'rgba(38, 90, 250, 0.972)';
+
+            })
+        })
+ 
+    </script>
+</body>
+
+</html>
