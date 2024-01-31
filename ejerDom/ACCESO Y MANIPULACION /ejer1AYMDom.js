@@ -1,50 +1,49 @@
-document.addEventListener('DOMContentLoaded', function(){
+let tasks = [];
+
+function addTaskBtn() {
     const taskInput = document.getElementById('taskInput');
-    const addTaskBtn = document.getElementById('addtaskbtn');
+    const taskText = taskInput.value.trim();
+
+    if (taskText !== '') {
+        tasks.push({ text: taskText, completed: false });
+        taskInput.value = '';
+        TaskList();
+    }
+}
+
+function toggleTask(index) {
+    tasks[index].completed = !tasks[index].completed;
+    TaskList();
+}
+
+function deleteTask(index) {
+    tasks.splice(index, 1);
+    TaskList();
+}
+
+function TaskList() {
     const taskList = document.getElementById('taskList');
+    taskList.innerHTML = '';
 
-    addTaskBtn.addEventListener('click', addTask);
+    tasks.forEach((task, index) => {
+        const listItem = document.createElement('li');
+        listItem.className = task.completed ? 'completed' : '';
 
-function addTask(){
-const taskText = taskInput.value.trim();
-if (taskText !== ''){
-const taskItem = document.getElementById(taskText);
-taskList.appendChild(taskItem);
-taskInput.value = '';
-}  
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = task.completed;
+        checkbox.addEventListener('change', () => toggleTask(index));
+
+        const taskText = document.createTextNode(task.text);
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Eliminar';
+        deleteButton.addEventListener('click', () => deleteTask(index));
+
+        listItem.appendChild(checkbox);
+        listItem.appendChild(taskText);
+        listItem.appendChild(deleteButton);
+
+        taskList.appendChild(listItem);
+    });
 }
-})
-
-function createTaskItem(taskText){
-const taskItem = document.createElement('li');
-taskItem.className = (taskItem);
-
-const taskLabel = document.createElement('span');
-taskLabel.textContent = ('taskText');
-
-const completeBtn = document.createElement('button');
-completeBtn.textContent = 'completar';
-completeBtn.addEventListener('click', toggleComplete())
-
-
-const deleteBtn = document.createElement('button');
-deleteBtn.textContent = 'Eliminar';
-deleteBtn.addEventListener('click', deleteTask())
-
-taskText.appendChild(taskItem);
-taskText.appendChild(completeBtn);
-taskText.appendChild(deleteBtn);
-}
-return taskText;
-
-function toggleComplete(){
-const taskItem = this.closest('.taskItem');
-taskItem.classList.toggle('completed')
-}
-function deleteTask(){
-    const taskItem = this.closest('.taskItem');
-    taskItem.removeChild(taskItem);
-}
-
-
-

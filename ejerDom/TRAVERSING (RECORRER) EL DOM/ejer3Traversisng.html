@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!--Eliminación de Elementos: Selecciona un conjunto de elementos y proporciona 
-        la capacidad de eliminarlos al hacer clic en un botón.
--->
 
-<div class="container">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  li{
+    margin-top: 10px;
+  }
+
+  button{
+    margin-left: 30px;
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 10px;
+    color: blue;
+  }
+</style>
+<body>
+  <!-- Eliminación de Elementos: Selecciona un conjunto de elementos y proporciona 
+        la capacidad de eliminarlos al hacer clic en un botón.
+  -->
+
+  <div class="container">
     <h1 class="elemento">elementos a eliminar</h1>
 
-    <ul>
-        <li class="delete">elemeto 1</li>
-        <li class="delete">elemento 2</li>
-        <li class="delete">elemento 3</li>
+    <ul id="myList">
+      <li class="delete">elemeto 1</li>
+      <li class="delete">elemento 2</li>
+      <li class="delete">elemento 3</li>
+      <li class="delete">elemento 4</li>
+      <li class="delete">elemento 5</li>
+      <li class="delete">elemento 6</li>
+      <li class="delete">elemento 7</li>
+      <li class="delete">elemento 8</li>
+      <li class="delete">elemento 9</li>
+      <li class="delete">elemento 10</li>
     </ul>
-</div>
 
-<script>
-    function addDeletebtn() {
-  const deleteBtn = document.getElementById("delete");
+  </div>
 
-  deleteBtn.textContent = "x";
-  deleteBtn.className = "btn-delete";
-
-  deleteBtn.addEventListener('click', (e) => {
-    const item = e.target.parentElement;
-    ul.removeChild(item);
-
-    const itemS = document.querySelectorAll("li");
-
-    if (items.length === 0){
-      completar.style.display = "block";
-
-    }
-  })
-  return deleteBtn;
-}
-
-</script>
+  <script src="../TRAVERSING (RECORRER) EL DOM/ejer3Traversisng.js"></script>
 </body>
+
 </html>

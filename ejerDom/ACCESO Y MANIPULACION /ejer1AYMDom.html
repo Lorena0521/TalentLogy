@@ -5,25 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-
+<style>
+    .card{
+        background-color: rgb(244, 228, 208);
+    }
+    button{
+        background-color: chartreuse;
+        margin-top: 10px;
+    }
+    li{
+        color: rgb(33, 6, 237);
+    }
+</style>
 <body>
     <!--Aplicación de Lista de Tareas: Diseña una aplicación de lista de tareas 
         donde los usuarios puedan agregar, marcar como completas y eliminar tareas.
          Utiliza eventos de clic para manejar las interacciones y actualiza 
          dinámicamente el DOM.
 -->
-<h1>Lista de Tareas</h1>
 
-<div id="lista-tareas">
-<input type="text" id="taskInput" placeholder="agregar una nueva tarea">
-<button id="addTaskBtn">agregar</button>
+    <div class="card text-center">
+        <div class="card-header">
 
-<ul id="taskList"></ul>
-</div>
+            <div id=" card-body lista-tareas">
+                <h1>Lista de Tareas</h1>
+                <input type="text" id="taskInput" placeholder="agregar una nueva tarea">
+                <button onclick="addTaskBtn()">agregar</button>
 
-<script src="ejer1AYMDom.js"></script>
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../ACCESO Y MANIPULACION /ejer1AYMDom.js"></script>
 </body>
 
 </html>

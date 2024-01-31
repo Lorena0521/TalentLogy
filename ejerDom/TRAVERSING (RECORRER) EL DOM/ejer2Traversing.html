@@ -5,42 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+<style>
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
 
 <body>
-    <!--Creación de una Lista Dinámica: Crea una lista (<ul> o <ol>) dinámicamente
+    <!-- Creación de una Lista Dinámica: Crea una lista (<ul> o <ol>) dinámicamente
          utilizando JavaScript. Permite que los usuarios agreguen elementos a la lista
-          mediante un formulario.    
--->
-    <h1>Agregar a la lista</h1>
+         mediante un formulario.
+    -->
 
-    <div id="DinamicList">
+    <div class="card mt-5 ml-5" style="width: 80%; margin-left: 150px;">
+        <div class="card-body">
+            <h5 class="card-title">Lista</h5>
+            <form class="form">
+                <label for="Producto">Producto</label>
+                <input type="text" class="form-control" id="Producto" placeholder="Ingresa Producto">
 
-        <form class="form">
-            <label for="Producto">Producto</label>
-            <input type="text" id="Producto" placeholder="ingresa Producto">
+                <label for="Marca" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="Marca" placeholder="Marca">
 
-            <label for="Marca" class="form-label">Email address</label>
-            <input type="text" class="form-control" id="Marca" placeholder="Marca">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input class="form-control m-1" id="cantidad" placeholder="Cantidad">
 
-            <label for="cantidad" class="form-label">Example textarea</label>
-            <input class="form-control" id="cantidad"></input>
+                <button class="btn btn-primary">Crear lista</button>
+            </form>
 
-            <button class="btn btn-primary">crear lista</button>
-        </form>
+            <ul id="miLista"></ul>
+
+        </div>
     </div>
 
-
-    <script>
-
-        const DinamicList = document.createElement('ul');
-        DinamicList.appendChild(DinamicList);
-
-
-    </script>
-
-    
+    <script src="../TRAVERSING (RECORRER) EL DOM/ejer2Traversing.js">
+         </script>
 </body>
 
 </html>

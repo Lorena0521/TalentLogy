@@ -1,24 +1,24 @@
-var audio = document.getElementById('audioPlayer');
-var song = [
-    { name: "Canción 1", src: "cancion1.mp3" },
-    { name: "Canción 2", src: "cancion2.mp3" }
-]
+document.addEventListener("DOMContentLoaded", function () {
+  const audioPlayer = document.getElementById("audioPlayer");
+  const playlist = document.getElementById("playlist");
+  const songs = [
+    { name: "Canción 1", src: "../../captura de pantalla/Adele-Easy-On-Me-_Official-Video_.mp3" },
+    { name: "Canción 2", src: "../../captura de pantalla/Rihanna-Diamonds.mp3" },
+  ];
 
- var songIndex = 0;
- 
-function playPause() {
-if (audio.paused) {
-audio.play();
-}
-audio.pause();
-}
+  songs.forEach((song, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = song.name;
+    listItem.setAttribute("data-src", song.src);
+    listItem.addEventListener("click", function () {
+      playSong(index);
+    });
+    playlist.appendChild(listItem);
+  });
 
-function setVolume() {
-audio.volume = document.getElementById("volume").value;
-}
-function changeSong(){
-    songIndex = document.getElementById('songSelector');
-    var selectedSong = song[songIndex];
-audio.src = selectedSong.src;
-audio.play();
-}
+  function playSong(index) {
+    const selectedSong = songs[index];
+    audioPlayer.src = selectedSong.src;
+    audioPlayer.play();
+  }
+});

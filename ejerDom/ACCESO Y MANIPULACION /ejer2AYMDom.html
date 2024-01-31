@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -14,22 +16,23 @@
      el título y el artista de la canción actualizando el DOM.
 -->
 
-    <div id="player">
+    <div id="player" style="margin-top:10px;">
         <audio id="audioPlayer" controls>
             tu navegador no soporta el audio.
+            <source src="../../captura de pantalla/Adele-Easy-On-Me-_Official-Video_.mp3" type="audio/mp3">
+            <source src="../../captura de pantalla/Rihanna-Diamonds.mp3" type="audio/mp3">
+
         </audio>
 
-        <button onclick="playPause()">reproducir/pausar</button>
-        <input type="range" id="volume" min="0" max="1" step="0.1" value="1" oninput="setVolume()">>
-        
-        <select id="songSelector" onchange="changeSong()">
-            <option value="0">Canción 1</option>
-            <option value="1">Canción 2</option>
+        <div id="playlist" class="list-group list-group-flush">
+            <ul id="List" class="list-group-item">
+            </ul>
+        </div>
 
-        </select>
+        
     </div>
 
-    <script src="ejer2AYMDom.js"></script>
+    <script src="../ACCESO Y MANIPULACION /ejer2AYMDom.js"></script>
 </body>
 
 </html>
