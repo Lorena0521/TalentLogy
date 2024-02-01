@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const audioPlayer = document.getElementById("audioPlayer");
   const playlist = document.getElementById("playlist");
   const songs = [
-    { name: "Canción 1", src: "../../captura de pantalla/Adele-Easy-On-Me-_Official-Video_.mp3" },
-    { name: "Canción 2", src: "../../captura de pantalla/Rihanna-Diamonds.mp3" },
+    { name: "Adele-Easy-On-Me", src: "../../captura de pantalla/Adele-Easy-On-Me-_Official-Video_.mp3" },
+    { name: "Rihanna-Diamonds", src: "../../captura de pantalla/Rihanna-Diamonds.mp3" },
   ];
 
   songs.forEach((song, index) => {
