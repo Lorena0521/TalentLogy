@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {}
+
+    .drop {
+        width: 200px;
+        height: 200px;
+        background: rgb(0, 0, 0);
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <!--Arrastrar y Soltar: Implementa la funcionalidad de arrastrar y soltar
+         para un elemento. Actualiza su posición en la página al soltarlo.
+-->
+    <div class="drop">
+        <div id="drag" draggable="true"><img src="../../captura de pantalla/seccion3.jpeg" alt=""></div>
+    </div>
+    <div class="drop" id="target"></div>
+
+    <script>
+        let dragged = null;
+        let leftX;
+        let topY;
+
+        // evento que permite arrastrar
+        const draggable = document.getElementById("drag");
+        draggable.addEventListener("dragstart", (event) => {
+            dragged = event.target;
+            leftX = event.clientX - dragged.getBoundingClientRect().left;
+            topY = event.clientY - dragged.getBoundingClientRect().top;
+        });
+
+        // evento para permitir llegar el elemento arrastrado
+        const target = document.getElementById("target");
+        target.addEventListener("dragover", (event) => {
+            event.preventDefault();
+        });
+
+        // evento para permitir caer o soltar el elemento
+        target.addEventListener("drop", (event) => {
+            event.preventDefault();
+
+            if (event.target.className === "drop") {
+                dragged.parentNode.removeChild(dragged);
+                event.target.appendChild(dragged);
+
+                dragged.style.left = 0;
+                dragged.style.top = 0;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
