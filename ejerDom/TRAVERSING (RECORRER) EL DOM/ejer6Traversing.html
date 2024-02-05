@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Toggle</title>
+</head>
+<style>
+    .change{
+        background-color: brown;
+        border: 3px solid rgb(87, 220, 16);
+        padding: 20px;
+        margin-top: 15px;
+        margin-left: 45px;
+        display: inline-block;
+        cursor: pointer
+        
+    }
+    .change.seleccionado{
+        background-color: rgb(227, 212, 241);
+        border: 10px solid black;
+
+    }
+</style>
+<body>
+    <!--Toggle de Clase al Hacer Clic: Selecciona un conjunto de elementos
+         y aplica un efecto de "toggle" al hacer clic en ellos, como cambiar
+          su fondo o bordes.
+-->
+
+
+<h1>Toggle de Clase al Hacer Clic:</h1> 
+
+<div class="change" onclick="toggleClase(this)">elemento 1</div>
+<div class="change" onclick="toggleClase(this)">elemento 2</div>
+<div class="change" onclick="toggleClase(this)">elemento 3</div>
+<div class="change" onclick="toggleClase(this)">elemento 4</div>
+<div class="change" onclick="toggleClase(this)">elemento 5</div>
+<div class="change" onclick="toggleClase(this)">elemento 6</div>
+
+<script>
+    function toggleClase(change){ // cambia o reemplaza el color anterior
+        change.classList.toggle("seleccionado")
+    }
+</script>
+
+</body>
+</html>

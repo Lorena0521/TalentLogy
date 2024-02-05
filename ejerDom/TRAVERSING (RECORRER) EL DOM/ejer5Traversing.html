@@ -13,14 +13,16 @@
     <title>Document</title>
 </head>
 <style>
-    input{
+    input {
         margin-top: 10px;
     }
-    button{
+
+    button {
         margin-top: 10px;
         margin-left: 500px;
     }
 </style>
+
 <body>
     <!--Validación de Formulario en Tiempo Real: Implementa la validación de formularios
          en tiempo real utilizando eventos y mensajes de error dinámicos.
@@ -34,6 +36,7 @@
                             <label for="firstName">Primer Nombre</label>
                             <input type="text" class="form-control" id="firstName" placeholder="First name"
                                 aria-label="First name">
+                                <div id="errorfirst"></div>
                         </div>
                         <div class="col">
                             <label for="secondName">Segundo Nombre</label>
@@ -72,9 +75,40 @@
         </div>
     </div>
 
-    <script src="../TRAVERSING (RECORRER) EL DOM/ejer5Traversing.js"></script>
-
+    <!--     <script src="../TRAVERSING (RECORRER) EL DOM/ejer5Traversing.js"></script>
+ -->
     <script>
+    
+        const validar = ^[a-zA-Z]{4,}$
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputNameError = document.getElementById('nameError');
+            const btnSubmit = document.getElementById('submit');
+            const firstName = document.getElementById('firstName');
+
+
+            firstName.addEventListener('keypress', (e) => {
+                console.log(firstName.selectionStart);
+                const valor = validar.indexOf(e.key) >= 0 ? e.key : ''
+                const valueName = e.target.value + valor;
+                let errorfirst = '';
+
+                // validar minimo de caracteres en el 
+
+                if (valor.length < 4) errorName = 'El nombre debe tener 4 letras minimo';
+
+                // if (valueEmailTmp.length > 5) errorEmail = 'El email debe tener 5 letras máximo';
+                // validar veracidad del correo
+
+                if (!validar.test(valueName)) errorfirst = 'no puede tener los caracteres @/*.-_';
+                btnSubmit.disabled = (!!errorfirst.length);
+                inputNameError.innerText = errorfirst;
+                console.log(e);
+            })
+            console.log(firstName);
+        })
 
 
     </script>
