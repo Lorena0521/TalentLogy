@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejer7Eventos.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--Temporizador con Eventos: Crea un temporizador que comienza a contar 
         cuando se carga la página. Muestra una alerta al llegar a cero.
 -->
+
+    <div class="container">
+        <div class="moneda" id="moneda">
+            <div class="lado Frente" id="frente" onclick="temporizar()">100</div>
+            <div class="lado Atras" id="atras">99</div>
+        </div>
+    </div>
+
+    <script>
+
+        function temporizar(segundos) {
+            var contador = segundos;
+            var temporizador = setInterval(){ function () {
+                document.getElementById("frente").innerHTML = contador;
+                contador--;
+
+                if (contador < 0) {
+                    clearInterval('tiempo cumplido');
+                }
+            }, 1000;
+        }
+        window.onload = function () {
+            var segundos = 10;
+            temporizar(segundos);
+        }
+    }
+    
+    </script>
 </body>
+
 </html>

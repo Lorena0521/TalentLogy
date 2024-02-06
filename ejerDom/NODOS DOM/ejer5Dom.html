@@ -3,39 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Comentarios Dinámicos</title>
 </head>
+<style>
+    input{
+        display: inline-block;
+        margin-left: 500px;
+    }
+</style>
 
 <body>
-    <!--Comentarios Dinámicos: Utiliza JavaScript para agregar un comentario
-         dinámico a tu código HTML. Por ejemplo, puedes agregar un comentario 
-         que indique la fecha y hora en que se realizó una acción específica.
--->
+    <div class="card mt-5">
+        <div class="card-body">
+            <div id="comentario-dinamico">
+                <span id="commentText"></span>
+            </div>
 
-    <div id="commentContainer">
+            <div>
+                <input type="text" id="inputComment">
+                <button onclick="agregarComentario()">Agregar Comentario</button>
+            </div>
+        </div>
     </div>
-    <script>
-
-        var commentContainer = document.getElementById('commentContainer');
-
-        var comentario = document.createComment('esta accion se realizo:' + fechaYHora());
-
-        commentContainer.appendChild(comentario);
-
-        function fechaYHora() {
-            var tiempo = new Date();
-            var opcionFecha = { weekday: 'long', month: 'long', day: 'numeric' };
-            var opcionHora = { hour: 'numeric', minute: '2-digit', second: 'numeric', hour12: true }
-
-            var fechaFormateada = tiempo.toLocaleDateString('es-ES', opcionFecha);
-            var horaFormateada = tiempo.toLocaleTimeString('es-ES', opcionHora);
-
-            return fechaFormateada + ' a las ' + horaFormateada;
-        }
-
-
+    
+    <script src="../NODOS DOM/ejer5Dom.js">
     </script>
 
 </body>

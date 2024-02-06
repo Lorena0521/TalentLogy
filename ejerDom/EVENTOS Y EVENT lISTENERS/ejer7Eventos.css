@@ -1,0 +1,40 @@
+body {
+    background-color: dimgrey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Frente {
+    width: 250px;
+    height: 250px;
+    background-color: royalblue;
+}
+
+
+.Atras {
+    width: 250px;
+    height: 250px;
+    background-color: coral;
+    transform: rotateY(180deg);
+}
+
+.moneda{
+    position: relative;
+    animation: rotar 2s ease 0s infinite;
+    transform-style: preserve-3d;
+}
+.lado{
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 80px;
+   
+}
