@@ -26,11 +26,11 @@
             var minutos = fecha.getMinutes();
             var segundos = fecha.getSeconds();
 
-            var horaFormateada = hora.toString().padStart(2.'0') + ':' +
-                minutos.toString().padStart(2. '0') + ':' +
-                segundos.toString().padStart(2. '0');
+            var horaFormateada = hora.toString().padStart(2, '0') + ':' +
+                minutos.toString().padStart(2, '0') + ':' +
+                segundos.toString().padStart(2, '0');
 
-            document.getElementById('Hora-actual').textContent = 'Hora-actual';
+            document.getElementById('Hora-actual').textContent = horaFormateada;
 
         }
         actualizarHora();

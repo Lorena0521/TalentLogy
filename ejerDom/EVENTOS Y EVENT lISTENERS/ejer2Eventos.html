@@ -12,6 +12,20 @@
         crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+<style>
+    img {
+        width: 500px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel{
+        margin-left: 320px;
+        margin-top: 100px;
+
+    }
+</style>
 
 <body>
     <!--Galería de Imágenes con Navegación: Crea una galería de imágenes con 
@@ -19,51 +33,48 @@
 -->
 
     <div class="carousel">
-        <img src="../../captura de pantalla/galery1.jpeg" alt="...">
-        <img src="../../captura de pantalla/galery2.jpeg" alt="...">
-        <img src="../../captura de pantalla/galery3.jpeg" alt="...">
-    </div>
 
-    <button id="btn-danger" class="btn btn-danger" onclick="anteriorImagen()">
-        Anterior
-    </button>
-    <button id="btn-success" class="btn btn-success" onclick="siguienteImagen()">
-        Siguiente
-    </button>
+        <button id="btn-danger" class="btn btn-danger">
+            Anterior
+        </button>
+        <img id="imagen" src="../../captura de pantalla/galery1.jpeg" alt="...">
+
+
+        <button id="btn-success" class="btn btn-success">
+            Siguiente
+        </button>
     </div>
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
-            var carousel = document.getElementById("carousel");
-            var btnSuccess = document.getElementsByTagName("#carrousel img");
-            var indice = 0;
-
-            function siguienteImagen() {
-                btnSuccess[indice].style.display = "none";
-                indice = (indice + 1) % btnSuccess.length;
-                btnSuccess[indice].style.display = "block";
-
-            }
-
-            function anteriorImagen() {
-                btnSuccess[indice].style.display = "none";
-                indice = (indice - 1 + btnSuccess.length) % btnSuccess.length;
-                btnSuccess[indice].style.display = "block"
-            }
-
-            document.getElementById("btn-danger").addEventListener("click", siguienteImagen);
-            document.getElementById("btn-success").addEventListener("click", anteriorImagen);
-
+            var imagen = document.getElementById("imagen");
             var btnDanger = document.getElementById("btn-danger");
             var btnSuccess = document.getElementById("btn-success");
+            var imagenes = ['../../captura de pantalla/galery1.jpeg', '../../captura de pantalla/galery2.jpeg', '../../captura de pantalla/galery3.jpeg']
 
-            btnDanger.addEventListener('click', function () {
-                anteriorImagen();
-            });
 
-            btnSuccess.addEventListener('click', function () {
-                siguienteImagen();
-            });
+            let currentIndex = 0;
+
+            function mostrarImagenes(index) {
+                imagen.src = imagenes[index]; //actualiza el atributo src
+                imagen.alt = `Imagen ${index + 1}`; // actualiza atributo alt 
+            }
+
+            btnDanger.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
+                mostrarImagenes(currentIndex)
+                console.log("¡Has hecho clic en el botón!");
+
+            })
+
+            btnSuccess.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % imagenes.length;
+                mostrarImagenes(currentIndex)
+            })
+
+
+
+
         });
 
     </script>

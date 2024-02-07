@@ -24,12 +24,11 @@ const caracteresValidosName = [
 
       // validar minimo de caracteres en el 
 
-      if (valueNameTmp.length > 6) errorName = 'El email debe tener 6 letras minimo';
+      if (valueNameTmp.length < 4) errorName = 'El email debe tener 4 letras minimo';
 
-      // if (valueEmailTmp.length > 5) errorEmail = 'El email debe tener 5 letras máximo';
       // validar veracidad del correo
 
-      if (!regexName.test(valueNameTmp)) errorName = 'no puede tener los caracteres @/*.-_';
+      if (!regexName.test(valueNameTmp)) errorName = 'El email debe tener 4 letras minimo';
       btnSubmit.disabled = (!!errorName.length);
       inputNameError.innerText = errorName;
       console.log(e);
