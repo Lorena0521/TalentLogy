@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="ejer7Eventos.css">
     <title>Temporizador</title>
 </head>
+<style>
+    button {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 20px;
+        background-color: rgb(254, 231, 162);
+        margin-top: 250px;
+        font-size: large;
+    }
+</style>
 
 <body>
     <!--Temporizador con Eventos: Crea un temporizador que comienza a contar 
@@ -16,25 +27,29 @@
 
     <div class="container">
         <div class="moneda" id="moneda">
-            <div class="tiempo" id="tiempo" onload="temporizar()">10</div>
+            <button class="tiempo" id="tiempo" onload="temporizar()">60</button>
         </div>
     </div>
 
     <script>
 
+        var segundos = 60;
 
-            var segundos = 10;
+        document.addEventListener('DOMContentLoaded', function () {
+            temporizar();
+        })
 
-            function temporizar() {
-                document.getElementById('tiempo').innerHTML = segundos + "segundos"
-                if (segundos == 0) {
-                    alert('se acabo el tiempo')
-                } else {
-                    segundos--; // disminucion de segundos.
-                    setTimeout("temporizar()",1000)
-                }
+        function temporizar() {
+            document.getElementById('tiempo').innerHTML = segundos + " segundos";
+            if (segundos > 0) {
+                segundos--;
+                setTimeout(temporizar, 1000);
+            } else {
+                alert('se acabo el tiempo'); // disminucion de segundos.
+
             }
-        
+        }
+
     </script>
 </body>
 

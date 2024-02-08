@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+</head>
+
+<body>
+
+    <!--Efecto Parallax al Desplazarse: Implementa un efecto parallax en un
+         elemento mientras se desplaza por la página. Ajusta la velocidad del 
+         parallax según el desplazamiento.-->
+
+    <div class="parallax">
+        <div class="container">
+
+        <img src="../../captura de pantalla/parallax.jpeg" alt="">
+
+        </div>
+    </div>
+
+    <script>
+var imagen = document.querySelector('img');
+
+imagen.addEventListener('scroll', ()=> {
+
+    //obtener la cantidad de pixeles dedesplazamiento
+var scrolled = window.pageYOffset;
+
+//efecto de velocidad
+var velocidad = scrolled *0.4;
+
+parallax.style.transform("translateY("+ velocidad +"px");
+container.style.transform("translateY("+ velocidad*-1 +"px")
+})
+    </script>
+</body>
+
+</html>
