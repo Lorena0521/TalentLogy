@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Agregar un Nuevo Elemento: Crea un nuevo párrafo (<p>)
+         y agrégalo al final del cuerpo (<body>) de la página.
+-->
+
+    <div class="contenido">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos deserunt ab beatae pariatur. Sunt
+            temporibus dolor, labore ipsa nulla culpa eveniet placeat, fugiat doloremque ab explicabo aliquam voluptas
+            quae.</p>
+    </div>
+
+    <script>
+        var nuevoTexto = document.createElement("text");
+
+        nuevoTexto.textContent = 'nuevo texto ';
+        document.body.appendChild(nuevoTexto);
+    </script>
+</body>
+
+</html>
