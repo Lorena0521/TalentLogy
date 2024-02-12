@@ -1,15 +1,12 @@
-.Formulario {
-  display: inline-block;
-  border: 2px solid rgb(134, 132, 132);
-  border-radius: 5px;
-  box-shadow: darkslategray;
-  margin-left: 300px;
+body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
-input,
-label,
-textarea {
-  padding: 5px;
+button{
+  background-color: rgb(244, 79, 79);
+  border-radius: 5px;
   margin-top: 10px;
-  width: 100%
-  ;
 }

@@ -10,13 +10,21 @@
         crossorigin="anonymous">
     <title>Document</title>
 </head>
-
+<style>
+    body{
+        width: 80%;
+        margin-left: 150px;
+    }
+    input, button{
+        margin-top: 10px;
+    }
+</style>
 <body>
     <!--Crear una Lista Dinámica: Crea una lista (<ul> o <ol>) vacía. 
         Agrega elementos a la lista utilizando un formulario y JavaScript.
 -->
 
-    <div class="container">
+    <div class="card mt-5 container">
 
         <input type="text" id="inputList" placeholder="agregar tarea">
         <button class="btn btn-success" id="button">agregar tarea</button>
@@ -25,20 +33,7 @@
         </ul>
     </div>
 
-    <script>
-
-        var btn = document.getElementById("button");
-
-        btn.addEventListener('click', function () {
-            var inputList = document.getElementById("inputList").value;
-/*             console.log("el valor es: " + inputList);
- */            var lista = document.getElementById("lista");
-            var nuevaLista = document.createElement("li");
-            nuevaLista.textContent = (inputList.value);
-            lista.appendChild(nuevaLista)
-
-        });
-    </script>
+    <script src="../MODIFICACION/ejer6Modificacion.js"></script>
 </body>
 
 </html>

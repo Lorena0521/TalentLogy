@@ -1,24 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const audioPlayer = document.getElementById("audioPlayer");
-  const playlist = document.getElementById("playlist");
-  const songs = [
-    { name: "Adele-Easy-On-Me", src: "../../captura de pantalla/Adele-Easy-On-Me-_Official-Video_.mp3" },
-    { name: "Rihanna-Diamonds", src: "../../captura de pantalla/Rihanna-Diamonds.mp3" },
-  ];
+document.addEventListener('DOMContentLoaded', function () {
+  const audio = document.getElementById("audio");
+  const playPause = document.getElementById("play");
 
-  songs.forEach((song, index) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = song.name;
-    listItem.setAttribute("data-src", song.src);
-    listItem.addEventListener("click", function () {
-      playSong(index);
-    });
-    playlist.appendChild(listItem);
+  playPause.addEventListener('click', () => {
+      if (audio.paused || audio.ended) {
+          playPause.querySelector(".fa-pause").classList.toggle("hide");
+          playPause.querySelector(".fa-play").classList.toggle("hide");
+          audio.play();
+      } else {
+          audio.pause();
+          playPause.querySelector(".fa-pause").classList.toggle("hide");
+          playPause.querySelector(".fa-play").classList.toggle("hide");
+      }
   });
-
-  function playSong(index) {
-    const selectedSong = songs[index];
-    audioPlayer.src = selectedSong.src;
-    audioPlayer.play();
-  }
 });

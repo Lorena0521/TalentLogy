@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">"><link rel="stylesheet" href="../ACCESO Y MANIPULACION/ejer2AYMDom.css">
+<link rel="stylesheet" href="../ACCESO Y MANIPULACION /ejer2AYMDom.css">    
+<title>Document</title>
 </head>
+
 
 <body>
     <!--Reproductor de Música Interactivo: Desarrolla un reproductor de música interactivo.
@@ -19,23 +18,49 @@
      el título y el artista de la canción actualizando el DOM.
 -->
 
-    <div id="player" style="margin-top:10px;">
-        <audio id="audioPlayer" controls>
-            tu navegador no soporta el audio.
-            <source src="../../captura de pantalla/Adele-Easy-On-Me-_Official-Video_.mp3" type="audio/mp3">
-            <source src="../../captura de pantalla/Rihanna-Diamonds.mp3" type="audio/mp3">
 
-        </audio>
-
-        <div id="playlist" class="list-group list-group-flush">
-            <ul id="List" class="list-group-item">
-            </ul>
+    <div class="mt-5 container aling-center">
+        <div id="player" class="player card">
+            <div class="player_controls">
+                <div class="player_btn player_bt--small">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <h5 class="player_tittle">playing now</h5>
+                <div class="player_btn player_bt--small">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="player_album">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ08PEhAlzHYzEqVUK9sync-EN9sGjL7EA_A&usqp=CAU"
+                    alt="album cover" class="player_img">
+            </div>
+            <h2 class="player_artist">adele</h2>
+            <h3 class="player_song">Easy On Me</h3>
+            <div class="audio-duration">
+           
+            <audio class="player_audio" controls id="audio">
+                <source src="../../captura de pantalla/Adele - Easy On Me (Official Lyric Video).mp3" type="audio/mpeg">
+            </audio>
         </div>
+            <div class="player_controls">
+                <div class="player_btn player_bt--medium" id="backward">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
 
+                <div class="player_btn player_bt--medium blue" id="play">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause"></i>
+                </div>
 
+                <div class="player_btn player_bt--medium" id="forward">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="../ACCESO Y MANIPULACION /ejer2AYMDom.js"></script>
-</body>
+
+    <script src="../ACCESO Y MANIPULACION/ejer2AYMDom.js"></script>
+
 
 </html>
