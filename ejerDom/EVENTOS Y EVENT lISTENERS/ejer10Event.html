@@ -5,17 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../EVENTOS Y EVENT lISTENERS/ejer10Event.css">
     <title>Parallax</title>
 </head>
-<style>
-      .parallax {
-            height: 1000px; /* Ajusta la altura según sea necesario */
-            overflow-y: scroll; /* Asegura el desplazamiento vertical */
-        }
 
-        .container {
-            position: relative;       }
-</style>
 <body>
 
     <!--Efecto Parallax al Desplazarse: Implementa un efecto parallax en un
@@ -23,28 +16,19 @@
          parallax según el desplazamiento.-->
 
     <div class="parallax">
-        <div class="container">
-            
-            <img src="../../captura de pantalla/parallax.jpeg" alt="">
-
+        <div class="container" id="container">
         </div>
     </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut tortor a mi varius pharetra sit amet vel
+            nisi. Aliquam at metus nisi. Aenean consequat ultrices mauris, nec suscipit odio interdum non. Nulla
+            facilisi. Sed convallis tortor id est gravida, vel ullamcorper purus tincidunt. Vivamus suscipit sapien vel
+            turpis ultrices malesuada. Fusce non enim dapibus, congue nunc non, aliquet sem. Morbi nec risus erat.
+            Integer tristique nisi eget leo bibendum, sed convallis ligula efficitur.</p>
+    </div>
 
-    <script>
-        var imagen = document.querySelector('img');
 
-        imagen.addEventListener('scroll', () => {
-
-            //obtener la cantidad de pixeles dedesplazamiento
-            var scrolled = window.pageYOffset;
-
-            //efecto de velocidad
-            var velocidad = scrolled * 0.1;
-
-            parallax.style.botton = "translateY(" + velocidad + "px)";
-            container.style.top = "translateY(" + (velocidad * -1) + "px)"
-        })
-    </script>
+    <script src="../EVENTOS Y EVENT lISTENERS/ejer10Event.js"></script>
 </body>
 
 </html>

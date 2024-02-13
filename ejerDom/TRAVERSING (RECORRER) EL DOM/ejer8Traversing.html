@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+<style>
+    body{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .gallery {
+        text-align: center;
+    }
+
+    .image {
+        display: none;
+        max-width: 100%;
+        width: 500px;
+        height: 500px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+</style>
+
 <body>
     <!--Galería de Imágenes con Navegación: Construye una galería de imágenes 
         con botones de navegación. Permite que los usuarios pasen de una imagen
          a otra sin recargar la página.
 -->
 
-<div class="galery">
-    
-</div>
+    <div class="gallery">
+        <img src="../../captura de pantalla/fondo1.jpeg" alt="Imagen 1" class="image">
+        <img src="../../captura de pantalla/fondo2.jpeg" alt="Imagen 2" class="image">
+        <img src="../../captura de pantalla/fondo3.jpeg" alt="Imagen 3" class="image">
+        <button class="btn btn-primary" onclick="prevImage()">Anterior</button>
+        <button class="btn btn-primary" onclick="nextImage()">Siguiente</button>
+    </div>
+
+    <script src="../TRAVERSING (RECORRER) EL DOM/ejer8Traversing.js"></script>
 </body>
+
 </html>

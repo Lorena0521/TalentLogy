@@ -19,7 +19,7 @@
 
     button {
         margin-top: 10px;
-        margin-left: 500px;
+        margin-left: 550px;
     }
 </style>
 
@@ -33,41 +33,29 @@
                 <form class="formulario">
                     <div class="row g-3">
                         <div class="col">
-                            <label for="firstName">Primer Nombre</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="First name"
-                                aria-label="First name">
-                                <div id="errorfirst"></div>
+                            <label for="Name">Nombre</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name"
+                                aria-label=" name">
+                            <div id="nameError"></div>
                         </div>
+
+                    </div>
+                    <div class="row g-3">
                         <div class="col">
-                            <label for="secondName">Segundo Nombre</label>
-                            <input type="text" class="form-control" id="secondName" placeholder="Last name"
-                                aria-label="Last name">
+                            <label for="InputEmail">email</label>
+                            <input type="email" class="form-control" id="InputEmail" placeholder="email"
+                                aria-label="First name">
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="col">
                             <label for="password">Contraseña</label>
-                            <input type="password" class="form-control" id="password" placeholder="First name"
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña"
                                 aria-label="First name">
                         </div>
-                        <div class="col">
-                            <label for="confirPassword">confirmation contraseña</label>
-                            <input type="password" class="form-control" id="confirPassword" placeholder="Last name"
-                                aria-label="Last name">
-                        </div>
+
                     </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <label for="InputEmail">email</label>
-                            <input type="email" class="form-control" id="InputEmail" placeholder="First name"
-                                aria-label="First name">
-                        </div>
-                        <div class="col">
-                            <label for="telefono">Telefono</label>
-                            <input type="number" class="form-control" id="telefono" placeholder="Last name"
-                                aria-label="Last name">
-                        </div>
-                    </div>
+
                     <button type="submit" class="btn btn-primary" id="submit">enviar</button>
 
                 </form>
@@ -78,36 +66,32 @@
     <!--     <script src="../TRAVERSING (RECORRER) EL DOM/ejer5Traversing.js"></script>
  -->
     <script>
-    
-        const validar = ^[a-zA-Z]{4,}$
+
+        const validar = /^[a-zA-Z]{4,}$/;
 
 
 
         document.addEventListener("DOMContentLoaded", function () {
-            const inputNameError = document.getElementById('nameError');
-            const btnSubmit = document.getElementById('submit');
-            const firstName = document.getElementById('firstName');
+            const inputNameError = document.getElementById('nameError'); //validar error
+            const btnSubmit = document.getElementById('submit');//boton
+            const name = document.getElementById('Name').value; //nombre
+
+            Name.addEventListener('keypress', (e) => {
+                console.log(name.selectionStart);
+                const name = e.target.value;
+                let nameError = '';
 
 
-            firstName.addEventListener('keypress', (e) => {
-                console.log(firstName.selectionStart);
-                const valor = validar.indexOf(e.key) >= 0 ? e.key : ''
-                const valueName = e.target.value + valor;
-                let errorfirst = '';
+                if (valor.length < 4) nameError = 'El nombre debe tener 4 letras minimo';
 
-                // validar minimo de caracteres en el 
-
-                if (valor.length < 4) errorName = 'El nombre debe tener 4 letras minimo';
-
-                // if (valueEmailTmp.length > 5) errorEmail = 'El email debe tener 5 letras máximo';
                 // validar veracidad del correo
 
-                if (!validar.test(valueName)) errorfirst = 'no puede tener los caracteres @/*.-_';
-                btnSubmit.disabled = (!!errorfirst.length);
-                inputNameError.innerText = errorfirst;
+                if (!validar.test(valueName)) nameError = 'no puede tener los caracteres @/*.-_';
+                btnSubmit.disabled = (!!nameError.length);
+                inputNameError.innerText = nameError;
                 console.log(e);
-            })
-            console.log(firstName);
+            });
+            console.log(name);
         })
 
 

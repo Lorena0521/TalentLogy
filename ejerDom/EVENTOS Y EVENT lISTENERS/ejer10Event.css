@@ -1,0 +1,15 @@
+.parallax {
+    height: 500px; /* Altura del elemento parallax */
+    overflow: hidden;
+    position: relative;
+}
+    .container {
+        background-image: url('https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/parallax-effect-t.jpg');
+        height: 80%;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+    }
+    .content{
+        height: 1500px;
+    } 

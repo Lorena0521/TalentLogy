@@ -11,17 +11,38 @@ addBtn.addEventListener('click', (e) => {
     const producto = ProductoInput.value;
     const marca = MarcaInput.value;
     const cantidad = cantidadInput.value;
-
-    if (producto !== "" && marca !== "" && cantidad !== "") {
+//producto
+    if (producto !== "" ) {
         const li = document.createElement("li");
         const p = document.createElement("p");
-        p.textContent = `Producto: ${producto}- Marca: ${marca} - Cantidad: ${cantidad}`;
+        p.textContent = `Producto: ${producto}`;
         
         li.appendChild(p);
         ul.appendChild(li);
 
-        ProductoInput.value = "";
+        ProductoInput.value = ""; 
+    }
+//marca
+    if (marca !== "") {
+        const li = document.createElement("li");
+        const p = document.createElement("p");
+        p.textContent = `Marca: ${marca}`;
+        
+        li.appendChild(p);
+        ul.appendChild(li);
+
         MarcaInput.value = "";
-        cantidadInput.value = "";
+    }
+    //cantidad
+    if (cantidad !== "") {
+        const li = document.createElement("li");
+        const p = document.createElement("p");
+        p.textContent = `cantidad: ${cantidad}`;
+        
+        li.appendChild(p);
+        ul.appendChild(li);
+        
+        cantidad.value = "";
+       
     }
 });
