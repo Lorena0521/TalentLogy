@@ -11,9 +11,21 @@
 </head>
 <style>
     body{
-  width: 70%;
-  margin-left: 200px;
+        width: 80%;
+        margin-left: 150px;
     }
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+   
 </style>
 <body>
     <!--Visualizador de Datos en Tabla: Construye un visualizador de datos
@@ -22,50 +34,38 @@
          para gestionar la interacción del usuario.
 -->
 
-    <h2>Visualizador de datos en la Tabla</h2>
+    <h2 class="mt-5">Visualizador de datos en la Tabla</h2>
 
-    <form id="Form" class="card mt-5">
+    <form id="Form" class="card mt-3">
         <div class="card-body form">
-            <label for="producto" class="form-label">agregar producto</label>
-            <input type="text" class="form-control" id="producto" placeholder="ingrese el producto">
+            <label for="producto" class="form-label">Agregar producto</label>
+            <input type="text" class="form-control" id="producto" placeholder="Ingrese el producto">
 
-            <label for="precio" class="form-label">agregar precio</label>
-            <input type="text" class="form-control" id="precio" placeholder="ingrese el precio">
+            <label for="precio" class="form-label">Agregar precio</label>
+            <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio">
 
-            <label for="cantidad" class="form-label">agregar cantidad</label>
-            <input type="text" class="form-control" id="cantidad" placeholder="ingrese la cantidad">
+            <label for="cantidad" class="form-label">Agregar cantidad</label>
+            <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad">
         </div>
-        <button type="submit" class="btn btn-info" id="enviar">Enviar</button>
+        <button type="submit" class="btn btn-info" id="agregar">Agregar fila</button>
     </form>
 
-    <div id=""></div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let inputProducto = document.getElementById("producto");
-            let inputPrecio = document.getElementById("precio");
-            let inputCantidad = document.getElementById("cantidad");
-            let btnEnviar = document.getElementById("enviar");
+    <table id="table" class="table mt-5">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
 
-            btnEnviar.addEventListener('click', function(){
-                var valor = inputProducto.value;
-                console.log(valor);
+        </tbody>
+    </table>
 
-                var table = document.createElement("table");
-                table.classList.add('tabla');
-                table.innerHTML = `
-
-                
-              <label for="campo${Counter}">Campo ${Counter}:</label>
-              <input type="text" id="campo${Counter}" name="campo${Counter}">
-              <button type="button" class="remove-field">Eliminar</button>
-          `;
-
-            })
-
-
-        });
-    </script>
+    <script src="../ACCESO Y MANIPULACION /ejer4AYMDom.js"></script>
 </body>
 
 </html>
