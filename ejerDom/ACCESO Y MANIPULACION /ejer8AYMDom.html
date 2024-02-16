@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <!--Aplicación de Encuestas: Diseña una aplicación de encuestas donde 
+    <!-- Aplicación de Encuestas: Diseña una aplicación de encuestas donde
         los usuarios pueden seleccionar opciones y ver los resultados
-         en tiempo real. Utiliza eventos para gestionar las selecciones y 
-         actualiza dinámicamente el DOM.-->
+        en tiempo real. Utiliza eventos para gestionar las selecciones y
+        actualiza dinámicamente el DOM. -->
+
+    <div id="survey">
+        <h1>Encuesta</h1>
+        <div id="options">
+            <select id="optionSelect">
+                <option value="option1">Opción 1</option>
+                <option value="option2">Opción 2</option>
+                <option value="option3">Opción 3</option>
+                <option value="option4">Opción 4</option>
+            </select>
+        </div>
+        <div id="results">
+            <h2>Resultados:</h2>
+            <div id="option1">0</div>
+            <div id="option2">0</div>
+            <div id="option3">0</div>
+            <div id="option4">0</div>
+        </div>
+    </div>
+
+    <script src="../ACCESO Y MANIPULACION /ejer8AYMDom.js"></script>
 </body>
+
 </html>
