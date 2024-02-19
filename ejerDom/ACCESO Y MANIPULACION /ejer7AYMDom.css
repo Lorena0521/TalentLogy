@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#comment-form input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#comment-form button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#comments {
+    margin-bottom: 20px;
+}
+
+#comments div {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+}

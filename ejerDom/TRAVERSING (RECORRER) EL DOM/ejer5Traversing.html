@@ -24,8 +24,8 @@
 </style>
 
 <body>
-    <!--Validación de Formulario en Tiempo Real: Implementa la validación de formularios
-         en tiempo real utilizando eventos y mensajes de error dinámicos.
+        <!--Validación de Formulario en Tiempo Real: Implementa la validación de formularios
+            en tiempo real utilizando eventos y mensajes de error dinámicos.
 -->
     <div class="container mt-5">
         <div class="card">
@@ -45,16 +45,10 @@
                             <label for="InputEmail">email</label>
                             <input type="email" class="form-control" id="InputEmail" placeholder="email"
                                 aria-label="First name">
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <label for="password">Contraseña</label>
-                            <input type="password" class="form-control" id="password" placeholder="Contraseña"
-                                aria-label="First name">
-                        </div>
+                                <div id="emailError"></div>
 
-                    </div>
+                        </div>
+                
 
                     <button type="submit" class="btn btn-primary" id="submit">enviar</button>
 
@@ -63,37 +57,9 @@
         </div>
     </div>
 
-    <!--     <script src="../TRAVERSING (RECORRER) EL DOM/ejer5Traversing.js"></script>
- -->
+       <script src="../TRAVERSING (RECORRER) EL DOM/ejer5Traversing.js"></script>
+
     <script>
-
-        const validar = /^[a-zA-Z]{4,}$/;
-
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const inputNameError = document.getElementById('nameError'); //validar error
-            const btnSubmit = document.getElementById('submit');//boton
-            const name = document.getElementById('Name').value; //nombre
-
-            Name.addEventListener('keypress', (e) => {
-                console.log(name.selectionStart);
-                const name = e.target.value;
-                let nameError = '';
-
-
-                if (valor.length < 4) nameError = 'El nombre debe tener 4 letras minimo';
-
-                // validar veracidad del correo
-
-                if (!validar.test(valueName)) nameError = 'no puede tener los caracteres @/*.-_';
-                btnSubmit.disabled = (!!nameError.length);
-                inputNameError.innerText = nameError;
-                console.log(e);
-            });
-            console.log(name);
-        })
-
 
     </script>
 </body>
